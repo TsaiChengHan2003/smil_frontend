@@ -1,12 +1,12 @@
-import path from 'path'
-import { fileURLToPath } from 'url'
-
 import js from '@eslint/js'
+import reactPlugin from 'eslint-plugin-react'
+import hooksPlugin from 'eslint-plugin-react-hooks'
 import importPlugin from 'eslint-plugin-import'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import prettierPlugin from 'eslint-plugin-prettier'
-import reactPlugin from 'eslint-plugin-react'
-import hooksPlugin from 'eslint-plugin-react-hooks'
+import babelParser from '@babel/eslint-parser'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -19,10 +19,23 @@ export default [
     ignores: ['dist', 'node_modules'],
 
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      parserOptions: { ecmaFeatures: { jsx: true, js: true } },
-      globals: { window: true, document: true, console: true }
+      parser: babelParser, // ✅ 使用 Babel parser
+      parserOptions: {
+        requireConfigFile: false,
+        babelOptions: {
+          presets: [
+            ['@babel/preset-react', { runtime: 'automatic' }] // ✅ 告訴 Babel 使用新 JSX transform
+          ],
+        },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: { jsx: true },
+      },
+      globals: {
+        window: true,
+        document: true,
+        console: true,
+      },
     },
 
     plugins: {
@@ -35,23 +48,20 @@ export default [
 
     settings: {
       react: { version: 'detect' },
-      // 告訴 import plugin 要解析哪些副檔名
-      'import/parsers': { '@babel/eslint-parser': ['.js', '.jsx'] },
-      // ✅ alias 與 node 同時啟用，並加入 @styles
       'import/resolver': {
         alias: {
           map: [
-            ['@', path.resolve(__dirname, './src')],
+            ['@',  path.resolve(__dirname, './src')],
+            ['@/', `${path.resolve(__dirname, './src')}/`], // ✅ 支援 '@/...' 的寫法
             ['@components', path.resolve(__dirname, './src/components')],
-            ['@assets', path.resolve(__dirname, './src/assets')],
-            ['@styles', path.resolve(__dirname, './src/assets/styles')],
-            ['@hooks', path.resolve(__dirname, './src/hooks')],
-            ['@utils', path.resolve(__dirname, './src/utils')],
+            ['@assets',     path.resolve(__dirname, './src/assets')],
+            ['@styles',     path.resolve(__dirname, './src/assets/styles')],
+            ['@hooks',      path.resolve(__dirname, './src/hooks')],
+            ['@utils',      path.resolve(__dirname, './src/utils')],
           ],
           extensions: ['.js', '.jsx', '.json', '.scss'],
         },
         node: {
-          // 讓 import plugin 也會從 src 當成根去找
           paths: [path.resolve(__dirname, './src')],
           extensions: ['.js', '.jsx', '.json', '.scss'],
         },
@@ -59,15 +69,20 @@ export default [
     },
 
     rules: {
-      // React / Hooks
-      'react/jsx-uses-react': 'error',
+      // ✅ 真正會抓「沒 import 的 <Component />」
+      'react/jsx-no-undef': 'error',
+
+      // 其他 React / Hooks
       'react/jsx-uses-vars': 'error',
+      'react/jsx-uses-react': 'error',
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
-      // Import
-      'import/no-unresolved': 'error',
 
-      // 其他
+      // import
+      'import/no-unresolved': ['error', { caseSensitive: false }],
+      'import/order': 'off',
+
+      // 其它雜項
       'react/prop-types': 'off',
       'react/display-name': 'off',
       'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],

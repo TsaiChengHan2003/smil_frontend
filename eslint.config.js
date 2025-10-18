@@ -24,17 +24,29 @@ export default [
         requireConfigFile: false,
         babelOptions: {
           presets: [
-            ['@babel/preset-react', { runtime: 'automatic' }] // ✅ 告訴 Babel 使用新 JSX transform
+            ['@babel/preset-react', { runtime: 'automatic' }], // ✅ 告訴 Babel 使用新 JSX transform
           ],
         },
         ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: { jsx: true },
       },
+      env: {
+        browser: true,
+        es2021: true,
+      },
       globals: {
         window: true,
         document: true,
         console: true,
+        setTimeout: true,
+        setInterval: true,
+        clearTimeout: true,
+        clearInterval: true,
+        localStorage: true,
+        sessionStorage: true,
+        process: true,
+        useForm: true,
       },
     },
 
@@ -51,13 +63,13 @@ export default [
       'import/resolver': {
         alias: {
           map: [
-            ['@',  path.resolve(__dirname, './src')],
+            ['@', path.resolve(__dirname, './src')],
             ['@/', `${path.resolve(__dirname, './src')}/`], // ✅ 支援 '@/...' 的寫法
             ['@components', path.resolve(__dirname, './src/components')],
-            ['@assets',     path.resolve(__dirname, './src/assets')],
-            ['@styles',     path.resolve(__dirname, './src/assets/styles')],
-            ['@hooks',      path.resolve(__dirname, './src/hooks')],
-            ['@utils',      path.resolve(__dirname, './src/utils')],
+            ['@assets', path.resolve(__dirname, './src/assets')],
+            ['@styles', path.resolve(__dirname, './src/assets/styles')],
+            ['@hooks', path.resolve(__dirname, './src/hooks')],
+            ['@utils', path.resolve(__dirname, './src/utils')],
           ],
           extensions: ['.js', '.jsx', '.json', '.scss'],
         },
@@ -87,6 +99,7 @@ export default [
       'react/display-name': 'off',
       'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       'no-console': 'off',
+      'no-case-declarations': 'off',
 
       // Prettier
       'prettier/prettier': [

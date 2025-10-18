@@ -4,7 +4,7 @@ import { Loader } from "react-feather";
 
 import PrivateRoute from "./private-route.jsx";
 import { LocalStorageProvider } from "../contexts/LocalStorageContext";
-import { LoadingProvider } from "../hooks/useLoading";
+import { LoadingProvider } from "../hooks/useLoading.jsx";
 import { routes } from "./layouts-routes.jsx";
 import { authRoutes } from "./auth-routs.jsx";
 import AppLayout from "../components/app.jsx";

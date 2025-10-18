@@ -1,0 +1,14 @@
+{
+  "header": {
+    "title": "語音與機器智慧實驗室",
+    "home": "首頁",
+    "about": "關於我們",
+    "research": "研究方向",
+    "members": "成員",
+    "contact": "聯絡我們"
+  },
+  "home": {
+    "welcome": "歡迎來到 SMIL！",
+    "desc": "我們專注於語音辨識與人工智慧技術研究。"
+  }
+}

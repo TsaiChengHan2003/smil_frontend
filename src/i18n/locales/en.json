@@ -1,0 +1,14 @@
+{
+  "header": {
+    "title": "Speech and Machine Intelligence Lab",
+    "home": "Home",
+    "about": "About",
+    "research": "Research",
+    "members": "Members",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to SMIL!",
+    "desc": "We focus on speech recognition and AI technology research."
+  }
+}

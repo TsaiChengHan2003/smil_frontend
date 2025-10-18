@@ -2,11 +2,11 @@ import { Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Loader } from "react-feather";
 
-import PrivateRoute from "./private-route";
+import PrivateRoute from "./private-route.jsx";
 import { LocalStorageProvider } from "../contexts/LocalStorageContext";
 import { LoadingProvider } from "../hooks/useLoading";
-import { routes } from "./layouts-routes";
-import { authRoutes } from "./auth-routs";
+import { routes } from "./layouts-routes.jsx";
+import { authRoutes } from "./auth-routs.jsx";
 import AppLayout from "../components/app.jsx";
 
 const MainRoutes = () => {

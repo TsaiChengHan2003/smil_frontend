@@ -1,14 +1,22 @@
 {
-  "header": {
-    "title": "Speech and Machine Intelligence Lab",
-    "home": "Home",
-    "about": "About",
-    "research": "Research",
-    "members": "Members",
-    "contact": "Contact"
-  },
-  "home": {
-    "welcome": "Welcome to SMIL!",
-    "desc": "We focus on speech recognition and AI technology research."
-  }
+  "header": [
+    {"title": "About", "url": "/about"},
+    {"title": "Members","url": "/members"},
+    {"title": "News","url": "/news"},
+    {"title": "Research","url": "/research"},
+    {
+      "title": "Life",
+      "children": [
+        {
+          "title": "Academic",
+          "url": "/academic"
+        },
+        {
+          "title": "Daily",
+          "url": "/daily"
+        }
+      ]
+    },
+    { "title": "Achievements","url": "/achievements" }
+  ]
 }

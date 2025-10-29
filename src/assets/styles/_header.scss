@@ -1,0 +1,114 @@
+@use 'sass:map';
+@use './tokens' as *;
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: $color-bg;
+  box-shadow: var(--bs-box-shadow-sm, 0 1px 2px rgba(0,0,0,.06));
+  border-bottom: 1px solid var(--bs-border-color, rgba(125,125,125,.12));
+
+  .brand {
+    color: $color-fg;
+  }
+
+  .menu {
+    ul { gap: 8px; }
+
+    .menu-item {
+      position: relative;
+
+      &.has-submenu > .menu-link::after {
+        content: '';
+        display: inline-block;
+        margin-left: 6px;
+        border: 5px solid transparent;
+        border-top-color: currentColor;
+        transform: translateY(2px);
+      }
+
+      /* 純 CSS 顯示子選單 */
+      &.has-submenu:hover > .submenu,
+      &.has-submenu:focus-within > .submenu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .menu-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 44px;
+      color: $color-fg;
+      border-radius: var(--bs-border-radius, 6px);
+      transition:
+        background map.get($dur, normal) ease,
+        color map.get($dur, normal) ease;
+
+      &:hover {
+        background: rgba(125,125,125,.08);
+      }
+    }
+
+    .submenu {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      min-width: 180px;
+      padding: 8px;
+      border: 1px solid var(--bs-border-color, #e5e7eb);
+      border-radius: var(--bs-border-radius, 6px);
+      background: $color-bg;
+      box-shadow: var(--bs-box-shadow-sm, 0 1px 2px rgba(0,0,0,.06));
+      display: none;
+      opacity: 0;
+      transform: translateY(6px);
+      transition:
+        opacity map.get($dur, normal) ease,
+        transform map.get($dur, normal) ease;
+
+      .submenu-link {
+        display: block;
+        width: 160px;
+        padding: 8px 10px;
+        color: $color-fg;
+        border-radius: 6px;
+
+        &:hover { background: rgba(125,125,125,.08); }
+      }
+
+      /* 按鈕外觀重置成連結樣式（給語言切換） */
+      .btn-as-link {
+        background: none;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        padding: 8px 10px;
+        width: 160px;
+        color: inherit;
+      }
+    }
+
+    .lang-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      gap: 8px;
+
+      &:hover { background: rgba(125,125,125,.08); }
+      .active { font-weight: 700; }
+      .sep { opacity: .55; }
+    }
+    
+    .app-header .lang-toggle .icon {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 6px;
+      opacity: .9;
+    }
+  }
+}

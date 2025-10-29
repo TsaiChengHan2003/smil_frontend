@@ -1,0 +1,12 @@
+@use './tokens' as *;
+@use './mixins' as *;
+
+html { scroll-behavior: smooth; }
+::selection { background: rgba(37, 99, 235, 0.2); }
+
+:focus-visible { @include focus-ring; }
+
+/* 補充表單元素的 placeholder 與 disabled 狀態（不與 Reboot 重複） */
+::placeholder { color: rgba(108, 117, 125, 0.9); }
+
+

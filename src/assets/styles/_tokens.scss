@@ -1,0 +1,41 @@
+:root {
+  --bs-font-sans-serif: "Inter", "Noto Sans TC", "Segoe UI", Arial, sans-serif;
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #111111;
+  --bs-primary: #2563eb;
+  --bs-link-color: var(--bs-primary);
+
+  /* custom */
+  --ring: 0 0 0 3px rgba(37, 99, 235, 0.35);
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #0b0f17;
+  --bs-body-color: #e5e7eb;
+  --bs-primary: #60a5fa;
+  --bs-link-color: var(--bs-primary);
+  --ring: 0 0 0 3px rgba(96, 165, 250, 0.35);
+}
+
+$font-sans: var(--bs-font-sans-serif);
+$color-bg: var(--bs-body-bg);
+$color-fg: var(--bs-body-color);
+$primary: var(--bs-primary);
+$ring: var(--ring);
+
+/* timing */
+$dur: (
+  fast: 120ms,
+  normal: 200ms,
+  slow: 320ms
+);
+
+/* breakpoints */
+$breakpoints: (
+  xs: 360px,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import styles from "../assets/scss/components/loading.module.scss";
+import styles from "@/assets/styles/components/loading.module.scss";
 
 const LoadingContext = createContext(null);
 

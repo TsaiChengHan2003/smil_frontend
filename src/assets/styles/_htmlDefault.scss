@@ -9,4 +9,12 @@ html { scroll-behavior: smooth; }
 /* 補充表單元素的 placeholder 與 disabled 狀態（不與 Reboot 重複） */
 ::placeholder { color: rgba(108, 117, 125, 0.9); }
 
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
 

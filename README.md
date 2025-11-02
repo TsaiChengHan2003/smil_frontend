@@ -16,5 +16,7 @@ included:
 - custom searchBar
 - react-toastify
 - react-useform
+- react-icon
+- react-feather
 - API base code
 - loading animation

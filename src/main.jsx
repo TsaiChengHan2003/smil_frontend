@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-
+import { ToastContainer } from 'react-toastify'
 import { LoadingProvider } from '@/hooks/useLoading.jsx'
 import '@styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,9 +11,11 @@ import './i18n/index.js'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <LoadingProvider>
-        <App />
-      </LoadingProvider>
+      <ToastContainer />
+        <LoadingProvider>
+          <App />
+        </LoadingProvider>
+      <ToastContainer />
     </BrowserRouter>
   </StrictMode>,
 )

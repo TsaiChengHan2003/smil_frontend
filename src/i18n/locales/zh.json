@@ -7,15 +7,15 @@
     { "title": "生活集錦", "url": "/life"},
     { "title": "研究成果", "url": "/achievements" }
   ],
-  "footer": [
-    { "copyright": "Copyright © 2025 SMIL. All rights reserved." },
-    { "address": "台北市大安區和平東路一段162號 NTNU 106 室" },
-    { "phone": "(02)7734-6676 分機 1234" },
-    { "fax": "(02)2932-2378" },
-    { "email": "smil@ntnu.edu.tw" },
-    { "social": [
-      { "name": "Github", "url": "https://github.com/smil" },
-      { "name": "ProfessorWebsite", "url": "https://www.smil.com/professor" }
-    ]}
-  ]
+  "login": "登入",
+  "logout": "登出",
+  "footer": {
+    "copyright": "Copyright © 2025 SMIL. All rights reserved.",
+    "address": "116臺北市文山區汀州路四段88號 應用科學大樓206室",
+    "phone": "(02)7734-6676 分機 1234",
+    "fax": "(02)2932-2378",
+    "email": "smil@ntnu.edu.tw",
+    "github": "https://github.com/smil",
+    "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
+  }
 }

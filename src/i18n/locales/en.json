@@ -6,5 +6,16 @@
     { "title": "Research","url": "/research"},
     { "title": "Life", "url": "/life"},
     { "title": "Achievements","url": "/achievements" }
-  ]
+  ],
+  "login": "Login",
+  "logout": "Logout",
+  "footer": {
+    "copyright": "Copyright © 2025 SMIL. All rights reserved.",
+    "address": "Room 206, Applied Science Building, No.88, Sec. 4, Ting Zhou Rd., Wenshan Dist., Taipei City 116, Taiwan",
+    "phone": "(02) 7734-6676 ext. 1234",
+    "fax": "(02) 2932-2378",
+    "email": "smil@ntnu.edu.tw",
+    "github": "https://github.com/smil",
+    "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
+  }
 }

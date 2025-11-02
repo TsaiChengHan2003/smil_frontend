@@ -9,19 +9,14 @@
   --ring: 0 0 0 3px rgba(37, 99, 235, 0.35);
 }
 
-[data-bs-theme="dark"] {
-  --bs-body-bg: #0b0f17;
-  --bs-body-color: #e5e7eb;
-  --bs-primary: #60a5fa;
-  --bs-link-color: var(--bs-primary);
-  --ring: 0 0 0 3px rgba(96, 165, 250, 0.35);
-}
-
 $font-sans: var(--bs-font-sans-serif);
 $color-bg: var(--bs-body-bg);
 $color-fg: var(--bs-body-color);
 $primary: var(--bs-primary);
 $ring: var(--ring);
+
+$main-color: #394f5a;
+$main-color-hover: #2288bb;
 
 /* timing */
 $dur: (

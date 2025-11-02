@@ -5,12 +5,12 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: $color-bg;
+  background: #394f5a;
   box-shadow: var(--bs-box-shadow-sm, 0 1px 2px rgba(0,0,0,.06));
   border-bottom: 1px solid var(--bs-border-color, rgba(125,125,125,.12));
-
+  padding: 7px 0;
   .brand {
-    color: $color-fg;
+    color: #ffffff;
   }
 
   .menu {
@@ -41,16 +41,21 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 120px;
-      height: 44px;
-      color: $color-fg;
+      padding: 0 15px;
+      width: auto;
+      height: 40px;
+      color: #ffffff;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 0.1em;
       border-radius: var(--bs-border-radius, 6px);
       transition:
         background map.get($dur, normal) ease,
         color map.get($dur, normal) ease;
 
       &:hover {
-        background: rgba(125,125,125,.08);
+        background: #30151525; 
+        color: #2288bb;
       }
     }
 
@@ -97,18 +102,59 @@
       background: none;
       border: none;
       cursor: pointer;
-      gap: 8px;
-
-      &:hover { background: rgba(125,125,125,.08); }
-      .active { font-weight: 700; }
-      .sep { opacity: .55; }
+      display: flex;
+      align-items: center;
+    
+      &:hover { background: #30151525; color: #2288bb; }
+      
+      .icon {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 6px;
+        opacity: .9;
+      }
+    
+      .lang-label {
+        font-weight: 600;
+        min-width: 30px;
+      }
+    
+      .toggle-switch {
+        width: 44px;
+        height: 22px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        position: relative;
+        transition: background-color map.get($dur, normal) ease;
+        margin-left: 5px;
+        margin-top: 1px;
+        
+        .toggle-slider {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          top: 2px;
+          left: 2px;
+          transition: transform map.get($dur, normal) ease;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          
+          &.zh {
+            transform: translateX(0);
+          }
+          
+          &.en {
+            transform: translateX(22px);
+          }
+        }
+      }
+      
+      &:hover .toggle-switch {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
     }
     
-    .app-header .lang-toggle .icon {
-      display: inline-flex;
-      align-items: center;
-      margin-right: 6px;
-      opacity: .9;
-    }
+
   }
 }

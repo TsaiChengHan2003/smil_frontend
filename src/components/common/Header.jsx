@@ -14,9 +14,8 @@ export function Header() {
   return (
     <header className="app-header">
       <div className="container d-flex align-items-center justify-content-between py-2">
-        <Link to="/" className="brand d-flex align-items-center gap-2 text-decoration-none">
-          <img src="/vite.svg" alt="SMIL" width="28" height="28" />
-          <span className="fw-bold">SMIL</span>
+        <Link to="/" className="brand d-flex align-items-center text-decoration-none">
+          <img src="/images/smil_logo.png" alt="SMIL" width="140" height="50" />
         </Link>
 
         <nav className="menu" aria-label="Main Navigation">
@@ -32,22 +31,24 @@ export function Header() {
                 )}
               </li>
             ))}
-
               <li className="menu-item">
-                <button
-                  type="button"
-                  className="menu-link lang-toggle"
-                  onClick={() => i18n.changeLanguage(nextLang)}
-                  aria-label={`Switch language to ${nextLang.toUpperCase()}`}
-                >
-                <span className="icon" aria-hidden="true">
-                  <Globe size={18} />
-                </span>
-                <span className={currentLang === 'zh' ? 'active' : ''}>ZH</span>
-                <span className="sep">/</span>
-                <span className={currentLang === 'en' ? 'active' : ''}>EN</span>
-              </button>
-            </li>
+                <div className="lang-toggle-wrapper">
+                  <button
+                    type="button"
+                    className="menu-link lang-toggle"
+                    onClick={() => i18n.changeLanguage(nextLang)}
+                    aria-label={`Switch language to ${nextLang.toUpperCase()}`}
+                  >
+                    <span className="icon" aria-hidden="true">
+                      <Globe size={18} />
+                    </span>
+                    <span className="lang-label">{currentLang === 'zh' ? '中文' : 'English'}</span>
+                    <span className="toggle-switch">
+                      <span className={`toggle-slider ${currentLang}`}></span>
+                    </span>
+                  </button>
+                </div>
+              </li>
           </ul>
         </nav>
       </div>

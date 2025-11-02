@@ -1,22 +1,21 @@
 {
   "header": [
-    {"title": "關於我們", "url": "/about"},
-    {"title": "所有成員","url": "/members"},
-    {"title": "重要公告","url": "/news"},
-    {"title": "相關研究","url": "/research"},
-    {
-      "title": "生活集錦",
-      "children": [
-        {
-          "title": "學術交流",
-          "url": "/academic"
-        },
-        {
-          "title": "日常點滴",
-          "url": "/daily"
-        }
-      ]
-    },
-    { "title": "研究成果","url": "/achievements" }
+    { "title": "關於我們", "url": "/about"},
+    { "title": "所有成員", "url": "/members"},
+    { "title": "重要公告", "url": "/news"},
+    { "title": "相關研究", "url": "/research"},
+    { "title": "生活集錦", "url": "/life"},
+    { "title": "研究成果", "url": "/achievements" }
+  ],
+  "footer": [
+    { "copyright": "Copyright © 2025 SMIL. All rights reserved." },
+    { "address": "台北市大安區和平東路一段162號 NTNU 106 室" },
+    { "phone": "(02)7734-6676 分機 1234" },
+    { "fax": "(02)2932-2378" },
+    { "email": "smil@ntnu.edu.tw" },
+    { "social": [
+      { "name": "Github", "url": "https://github.com/smil" },
+      { "name": "ProfessorWebsite", "url": "https://www.smil.com/professor" }
+    ]}
   ]
 }

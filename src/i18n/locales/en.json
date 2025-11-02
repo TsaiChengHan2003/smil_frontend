@@ -1,22 +1,10 @@
 {
   "header": [
-    {"title": "About", "url": "/about"},
-    {"title": "Members","url": "/members"},
-    {"title": "News","url": "/news"},
-    {"title": "Research","url": "/research"},
-    {
-      "title": "Life",
-      "children": [
-        {
-          "title": "Academic",
-          "url": "/academic"
-        },
-        {
-          "title": "Daily",
-          "url": "/daily"
-        }
-      ]
-    },
+    { "title": "About", "url": "/about"},
+    { "title": "Members", "url": "/members"},
+    { "title": "News", "url": "/news"},
+    { "title": "Research","url": "/research"},
+    { "title": "Life", "url": "/life"},
     { "title": "Achievements","url": "/achievements" }
   ]
 }

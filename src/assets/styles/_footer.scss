@@ -1,6 +1,7 @@
 @use './tokens' as *;
 
 .app-footer {
+  border-radius: 0 0 0.3rem 0.3rem;
   position: fixed;
   width: 100%;
   background-color: $main-color;

@@ -5,7 +5,7 @@ const GoogleAuthContext = createContext(null);
 
 export function GoogleAuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true); // @TODO: 等到登入串好之後、改成 false
 
   useEffect(() => {
     // 檢查是否有儲存的登入狀態

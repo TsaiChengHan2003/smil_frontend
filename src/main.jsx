@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App.jsx'
 import './i18n/index.js'
 
+localStorage.setItem('user', 'anonymous');
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

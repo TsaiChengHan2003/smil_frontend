@@ -1,8 +1,8 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-const BASE_URL = process.env.REACT_APP_API_URL;
-const LOGIN_PAGE = "{登入頁面}";
-const HOME_PAGE = "{首頁}";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL + "/" + import.meta.env.VITE_API_VERSION;
+const LOGIN_PAGE = import.meta.env.VITE_FRONTEND_URL;
+const HOME_PAGE = import.meta.env.VITE_FRONTEND_URL;
 
 const API = axios.create({ baseURL: BASE_URL });
 const redirect = path => {

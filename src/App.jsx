@@ -1,34 +1,31 @@
 import '@styles/main.scss'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Footer } from '@/components/common/Footer'
 import { Header } from '@/components/common/Header'
-import { authRoutes } from '@/routes/auth-routs'
-import { routes } from '@/routes/layouts-routes'
-import PrivateRoute from '@/routes/private-route'
-import Error404 from '@/pages/errors/error404'
+import { useEffect } from 'react'
+import Index from '@/routes/index'
+import { useLoading } from './hooks/useLoading'
 
 export default function App() {
+  const {setLoading} = useLoading();
+
+  useEffect(() => {
+    setLoading(true);
+    localStorage.setItem('user', 'anonymous');
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  },[]);
+
   return (
     <>
       <Header />
-      <main className="app-main">
-        <Routes>
-          {/* 公開路由 */}
-          {authRoutes.map(({ path, Component }, i) => (
-            <Route key={`auth-${i}`} path={path} element={<Component />} />
-          ))}
-          
-          {/* 受保護的路由 */}
-          <Route path="/*" element={<PrivateRoute />}>
-            {routes.map(({ path, Component }, i) => (
-              <Route key={`route-${i}`} path={path} element={<Component />} />
-            ))}
-          </Route>
-          
-          {/* 404 頁面 */}
-          <Route path="*" element={<Error404 />} />
-        </Routes>
-      </main>
+        <main className="app-main">
+          <Routes>
+            <Route path="/index" element={<Index />} />
+          </Routes>
+        </main>
       <Footer />
     </>
   )

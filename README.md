@@ -53,6 +53,7 @@ included:
 - react-useform
 - react-icon
 - react-feather
+- axios
 - API base code
 - loading animation
 - **Google 登入整合**

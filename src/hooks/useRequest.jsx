@@ -18,22 +18,22 @@ import { useLoading } from "./useLoading";
 export function useRequest() {
   const { setLoading } = useLoading();
 
-  const defaultRequest = useCallback(async (func, err) => {
+  const defaultRequest = useCallback(async (func, err, returnData = false) => {
     setLoading(true);
     try {
       const response = await func();
 
-      // console.log(response);
       toast.success(response.message);
-      return true;
+      if (returnData) {
+        return response;
+      } else {
+        return true;
+      }
     } catch (e) {
       console.log(e);
       toast.error(e.message);
-      return false;
     } finally {
-      setTimeout(() => {
-        setLoading(false);
-      }, 300);
+      setLoading(false);
     }
   }, []);
 

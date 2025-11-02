@@ -1,10 +1,15 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, NavLink } from 'react-router-dom'
-import { Globe } from 'react-feather'
-import { GoPerson } from "react-icons/go";
+import { Globe, LogOut } from 'react-feather'
+import { GoPerson } from "react-icons/go"
+import { useGoogleAuth } from '@/contexts/GoogleAuthContext'
+import { GoogleLoginPopup } from '@/components/popup/GoogleLoginPopup'
 
 export function Header() {
   const { t, i18n } = useTranslation()
+  const { isLoggedIn, handleLogout } = useGoogleAuth()
+  const [showLoginPopup, setShowLoginPopup] = useState(false)
 
   const lang = (i18n.resolvedLanguage || i18n.language || 'zh')
   const currentLang = lang.startsWith('zh') ? 'zh' : 'en'
@@ -13,11 +18,7 @@ export function Header() {
   const header = t('header', { returnObjects: true }) // 取得陣列
 
   const handleLogin = () => {
-    console.log('login')
-  } 
-
-  const handleLogout = () => {
-    console.log('logout')
+    setShowLoginPopup(true)
   }
 
   return (
@@ -59,19 +60,35 @@ export function Header() {
               </div>
             </li>
             <li className="menu-item">
-              <button 
-                type="button"
-                className="menu-link login-btn" 
-                onClick={() => handleLogin()}
-                aria-label={t('login')}
-              >
-                <GoPerson size={18} />
-                <span className="btn-text">{t('login')}</span>
-              </button>
+              {isLoggedIn ? (
+                <button 
+                  type="button"
+                  className="menu-link login-btn" 
+                  onClick={handleLogout}
+                  aria-label={t('logout')}
+                >
+                  <LogOut size={18} />
+                  <span className="btn-text">{t('logout')}</span>
+                </button>
+              ) : (
+                <button 
+                  type="button"
+                  className="menu-link login-btn" 
+                  onClick={handleLogin}
+                  aria-label={t('login')}
+                >
+                  <GoPerson size={18} />
+                  <span className="btn-text">{t('login')}</span>
+                </button>
+              )}
             </li>
           </ul>
         </nav>
       </div>
+      <GoogleLoginPopup 
+        show={showLoginPopup} 
+        onHide={() => setShowLoginPopup(false)} 
+      />
     </header>
   )
 }

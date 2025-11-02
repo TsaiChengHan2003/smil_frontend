@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-import sad from '../../assets/images/other-images/sad.png';
 const Error503 = () => (
   <Fragment>
     <div className="page-wrapper">
       {/* <!-- error-503 start--> */}
       <div className="error-wrapper">
-        <div className="container"><img className="img-100" src={sad} alt="" />
+        <div className="container">
           <div className="error-heading">
             <h2 className="headline font-secondary">{'503'}</h2>
           </div>

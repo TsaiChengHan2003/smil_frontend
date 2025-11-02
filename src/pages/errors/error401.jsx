@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
-import sad from '../../assets/images/other-images/sad.png';
 const Error401 = () => (
   <Fragment>
     <div className="page-wrapper">
       {/* <!-- error-401 start--> */}
       <div className="error-wrapper">
-        <div className="container"><img className="img-100" src={sad} alt="" />
+        <div className="container">
           <div className="error-heading">
             <h2 className="headline font-warning">{'401'}</h2>
           </div>

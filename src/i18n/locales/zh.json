@@ -17,5 +17,11 @@
     "email": "smil@ntnu.edu.tw",
     "github": "https://github.com/smil",
     "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
-  }
+  },
+  "copied": "已複製",
+  "clickToCopyAddress": "點擊複製地址",
+  "clickToCopyEmail": "點擊複製電子郵件",
+  "clickToCopyPhone": "點擊複製電話",
+  "clickToCopyFax": "點擊複製傳真",
+  "clickToOpenGitHub": "點擊開啟 GitHub"
 }

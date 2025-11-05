@@ -8,7 +8,7 @@ export function Footer() {
   
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text).then(() => {
-      toast.success(`已複製：${text}`)
+      toast.success( t('copied') + `：${text}`)
     })
   }
 
@@ -22,19 +22,19 @@ export function Footer() {
         <div className="row">
           <div className="d-flex flex-column gap-2" style={{ width: '100%' }}>
             <div className="d-flex gap-2 justify-content-center align-items-center">
-              <span onClick={() => handleCopy(footer.address)} title="點擊複製地址">
+              <span onClick={() => handleCopy(footer.address)} title={t('clickToCopyAddress')}>
                 <Compass size={16} />
               </span>
-              <span onClick={() => handleCopy(footer.email)} title="點擊複製電子郵件">
+              <span onClick={() => handleCopy(footer.email)} title={t('clickToCopyEmail')}>
                 <Mail size={16} />
               </span>
-              <span onClick={() => handleCopy(footer.phone)} title="點擊複製電話">
+              <span onClick={() => handleCopy(footer.phone)} title={t('clickToCopyPhone')}>
                 <Phone size={16} />
               </span>
-              <span onClick={() => handleCopy(footer.fax)} title="點擊複製傳真">
+              <span onClick={() => handleCopy(footer.fax)} title={t('clickToCopyFax')}>
                 <Printer size={16} />
               </span>
-              <span onClick={() => handleLinkClick(footer.github)} title="點擊開啟 GitHub">
+              <span onClick={() => handleLinkClick(footer.github)} title={t('clickToOpenGitHub')}>
                 <GitHub size={16} />
               </span>
             </div>

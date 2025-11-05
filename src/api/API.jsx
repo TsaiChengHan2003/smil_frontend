@@ -1,6 +1,6 @@
 import axios from "axios";
 import { toast } from "react-toastify";
-const BASE_URL = import.meta.env.VITE_BACKEND_URL + "/" + import.meta.env.VITE_API_VERSION;
+const BASE_URL = import.meta.env.VITE_BACKEND_URL + import.meta.env.VITE_API_VERSION;
 const LOGIN_PAGE = import.meta.env.VITE_FRONTEND_URL;
 const HOME_PAGE = import.meta.env.VITE_FRONTEND_URL;
 

@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Footer } from '@/components/common/Footer'
 import { Header } from '@/components/common/Header'
 import { useEffect } from 'react'
-import Index from '@/routes/index'
+import Index from '@/pages/index'
 import { useLoading } from './hooks/useLoading'
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
       <Header />
         <main className="app-main">
           <Routes>
-            <Route path="/index" element={<Index />} />
+            <Route path="/" element={<Index />} />
           </Routes>
         </main>
       <Footer />

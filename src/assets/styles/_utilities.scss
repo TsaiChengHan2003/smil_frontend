@@ -8,6 +8,9 @@
 .flex-center { display: flex; align-items: center; justify-content: center; gap: 8px; }
 .grid-center { display: grid; place-items: center; gap: 8px; }
 
+.app-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { flex: 1 0 auto; }
+
 /* 簡易 spacing 工具 */
 $spaces: (0: 0, 1: 4px, 2: 8px, 3: 12px, 4: 16px, 5: 24px, 6: 32px);
 @each $k, $v in $spaces {

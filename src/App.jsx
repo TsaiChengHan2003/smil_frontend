@@ -5,6 +5,12 @@ import { Header } from '@/components/common/Header'
 import { useEffect } from 'react'
 import Index from '@/pages/index'
 import { useLoading } from './hooks/useLoading'
+import About from './pages/about'
+import Member from './pages/member'
+import News from './pages/news'
+import Research from './pages/research'
+import Life from './pages/life'
+import Achievements from './pages/achievements'
 
 export default function App() {
   const {setLoading} = useLoading();
@@ -19,14 +25,20 @@ export default function App() {
   },[]);
 
   return (
-    <>
+    <div className="app-shell">
       <Header />
-        <main className="app-main">
-          <Routes>
-            <Route path="/" element={<Index />} />
-          </Routes>
-        </main>
+      <main className="app-main">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/member" element={<Member />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/life" element={<Life />} />
+          <Route path="/achievements" element={<Achievements />} />
+        </Routes>
+      </main>
       <Footer />
-    </>
+    </div>
   )
 }

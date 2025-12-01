@@ -7,6 +7,10 @@
     { "title": "Life", "url": "/life"},
     { "title": "Achievements","url": "/achievements" }
   ],
+  "about": {
+    "title": "About SMIL",
+    "content": "The Social Media and Information Lab (SMIL) at National Taiwan Normal University (NTNU) focuses on the study of social media, information dissemination, and their impacts on society. Our research encompasses various aspects of social media platforms, including user behavior, content analysis, and the role of social media in shaping public opinion. We aim to contribute to the understanding of digital communication and its implications for individuals and communities."
+  },
   "login": "Login",
   "logout": "Logout",
   "footer": {

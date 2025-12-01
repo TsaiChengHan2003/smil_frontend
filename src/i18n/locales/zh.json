@@ -8,8 +8,24 @@
     { "title": "研究成果", "url": "/achievements" }
   ],
   "about": {
-    "title": "關於我們",
-    "content": "社群媒體與資訊實驗室（Social Media and Information Lab，簡稱 SMIL）位於國立臺灣師範大學，專注於社群媒體、資訊傳播及其對社會影響的研究。我們的研究涵蓋社群媒體平台的各個方面，包括使用者行為、內容分析以及社群媒體在塑造公共輿論中的角色。我們致力於促進對數位溝通及其對個人和社群影響的理解。"
+    "introTitle": "關於 SMIL",
+    "introContent": "語音與機器智慧實驗室 (Speech and Machine Intelligence Laboratory)，致力於語音訊號處理、自然語言理解及深度學習模型之研究。我們結合學術理論與實務應用，探索 AI 在人機互動與多媒體資訊分析上的無限可能。",    "joinTitle": "如何加入？",
+    "joinContent": "歡迎對語音處理、AI模型訓練及應用有興趣者加入，想加入的新生記得先寄Email與老師約面談時間！！也很歡迎先至實驗室敲敲門與學長姐聊聊，體驗實驗室氣氛。",
+    "expectTitle": "老師給學生的話",
+    "expectContent1": "人生只有一次，將每天都當最後一天",
+    "expectContent2": "鞏固領域知識，建立自身的不可取代性",
+    "expectContent3": "吸收舊有的理論，勇於開創並嘗試新的可能性",
+    "expectContent4": "換個位置，就要換個腦袋",
+    "historyTitle": "實驗室發展史",
+    "historyContent": "SMIL 由指導教授與一群對數位傳播與資訊科技充滿興趣的學生共同建立，逐步發展出跨領域的研究主題，涵蓋社群平台、線上輿論、語音與多媒體資訊處理等。我們與校內外研究團隊合作，參與各式計畫與專題，持續累積研究成果與實務經驗。",
+    "addressTitle": "實驗室資訊",
+    "addressContent": "116 臺北市汀州路四段 88 號國立臺灣師範大學資訊工程學系 應用科學大樓206室",
+    "labInfoTitle": "實驗室資訊",
+    "address": "地址",
+    "phone": "電話",
+    "fax": "傳真",
+    "email": "教授電子郵件",
+    "meetingFraquency": "每週會議次數"
   },
   "login": "登入",
   "logout": "登出",

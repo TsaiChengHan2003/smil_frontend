@@ -8,8 +8,22 @@
     { "title": "Achievements","url": "/achievements" }
   ],
   "about": {
-    "title": "About SMIL",
-    "content": "The Social Media and Information Lab (SMIL) at National Taiwan Normal University (NTNU) focuses on the study of social media, information dissemination, and their impacts on society. Our research encompasses various aspects of social media platforms, including user behavior, content analysis, and the role of social media in shaping public opinion. We aim to contribute to the understanding of digital communication and its implications for individuals and communities."
+    "introTitle": "About SMIL",
+    "introContent": "The Social Media and Information Lab (SMIL) at National Taiwan Normal University (NTNU) focuses on how social media, information technologies, and digital communication shape our society. We are interested not only in platforms and algorithms, but also in how people use them, make sense of them, and are influenced by them in everyday life.",
+    "joinTitle": "If you want to join us",
+    "joinContent": "We welcome students who are curious about social media, data analysis, speech technology, and information science. Whether your strengths are in coding, research design, theory building, or storytelling, there is room for you to grow in SMIL. You can contact the lab via email or talk to the professor and senior lab members in classes or events to explore possible projects.",
+    "expectTitle": "What the professor expects",
+    "expectContent": "We hope SMIL members stay curious, responsible, and willing to learn. Rather than chasing flashy results, we value solid fundamentals, honest research practices, and genuine care for societal issues. Every small and carefully completed project is an important step toward becoming an independent researcher or professional.",
+    "historyTitle": "A brief history of the lab",
+    "historyContent": "SMIL was founded by the supervising professor and a group of students who share a passion for digital communication and information technologies. Over time, our research topics have expanded to include social platforms, online discourse, speech and multimedia processing, and more. We collaborate with partners both inside and outside NTNU, participating in various projects and building up research and practical experience.",
+    "addressTitle": "Where to find us",
+    "addressContent": "The lab is located at \"Room 206, Applied Science Building, No. 88, Sec. 4, Ting Zhou Rd., Wenshan Dist., Taipei City 116, Taiwan\". You are welcome to email us in advance to arrange a visit, a chat about potential projects, or a meeting about collaboration. We look forward to meeting you and hopefully welcoming you as a future member of SMIL.",
+    "labInfoTitle": "Lab Information",
+    "address": "Address",
+    "phone": "Phone",
+    "fax": "Fax",
+    "email": "Email",
+    "meetingFraquency": "MeetingFraquency"
   },
   "login": "Login",
   "logout": "Logout",

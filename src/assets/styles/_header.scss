@@ -6,9 +6,16 @@
   top: 0;
   z-index: 1000;
   background: $main-color;
+  background: rgba($main-color, var(--header-opacity, 1));
   box-shadow: var(--bs-box-shadow-sm, 0 10px 8px rgba(0, 0, 0, 0.1));
-  border-bottom: 1px solid var(--bs-border-color, rgba(125,125,125,.12));
   padding: 7px 0;
+  transition:
+    background-color map.get($dur, normal) ease,
+    background map.get($dur, normal) ease,
+    box-shadow map.get($dur, normal) ease;
+  .brand {
+    color: #ffffff;
+  }
   .brand {
     color: #ffffff;
   }

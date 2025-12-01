@@ -10,8 +10,6 @@ import App from './App.jsx'
 import './i18n/index.js'
 import '@acrool/react-carousel/dist/index.css';
 
-
-
 localStorage.setItem('user', 'anonymous');
 
 createRoot(document.getElementById('root')).render(

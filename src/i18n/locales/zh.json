@@ -7,6 +7,10 @@
     { "title": "生活集錦", "url": "/life"},
     { "title": "研究成果", "url": "/achievements" }
   ],
+  "about": {
+    "title": "關於我們",
+    "content": "社群媒體與資訊實驗室（Social Media and Information Lab，簡稱 SMIL）位於國立臺灣師範大學，專注於社群媒體、資訊傳播及其對社會影響的研究。我們的研究涵蓋社群媒體平台的各個方面，包括使用者行為、內容分析以及社群媒體在塑造公共輿論中的角色。我們致力於促進對數位溝通及其對個人和社群影響的理解。"
+  },
   "login": "登入",
   "logout": "登出",
   "footer": {

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, NavLink } from 'react-router-dom'
 import { Globe, LogOut } from 'react-feather'
@@ -10,7 +10,7 @@ export function Header() {
   const { t, i18n } = useTranslation()
   const { isLoggedIn, handleLogout } = useGoogleAuth()
   const [showLoginPopup, setShowLoginPopup] = useState(false)
-
+  const [headerOpacity, setHeaderOpacity] = useState(1)
   const lang = (i18n.resolvedLanguage || i18n.language || 'zh')
   const currentLang = lang.startsWith('zh') ? 'zh' : 'en'
   const nextLang = currentLang === 'zh' ? 'en' : 'zh'
@@ -21,8 +21,21 @@ export function Header() {
     setShowLoginPopup(true)
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY || window.pageYOffset
+      // 1 → 0.6 之間漸變，可依喜好調整 400 / 0.6
+      const opacity = Math.max(0.6, 1 - y / 400)
+      setHeaderOpacity(opacity)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className="app-header">
+    <header className="app-header" style={{ '--header-opacity': headerOpacity }}>
       <div className="container d-flex align-items-center justify-content-between py-2">
         <Link to="/" className="brand d-flex align-items-center text-decoration-none">
           <img src="/images/smil_logo.png" alt="SMIL" width="140" height="50" />

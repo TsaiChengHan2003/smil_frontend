@@ -51,11 +51,11 @@ export default function About() {
               
               <div className={styles.addressSection}>
                 <h3>{t('about.labInfoTitle')}</h3>
-                <h3>{t('about.address')}： {t('footer.address')}</h3>
                 <h3>{t('about.phone')}： {t('footer.phone')}</h3>
                 <h3>{t('about.fax')}： {t('footer.fax')}</h3>
                 <h3>{t('about.email')}：berlin@csie.ntnu.edu.tw</h3>
-                <h3>{t('about.meetingFraquency')} ：一週兩次</h3>
+                <h3>{t('about.meetingFraquencyTitle')}：{t('about.meetingFraquency')}</h3>
+                <h3>{t('about.address')}： {t('footer.address')}</h3>
               </div>
             </div>
 

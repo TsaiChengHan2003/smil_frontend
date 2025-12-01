@@ -25,7 +25,8 @@
     "phone": "電話",
     "fax": "傳真",
     "email": "教授電子郵件",
-    "meetingFraquency": "每週會議次數"
+    "meetingFraquencyTitle": "每週會議次數",
+    "meetingFraquency": "一週兩次"
   },
   "login": "登入",
   "logout": "登出",

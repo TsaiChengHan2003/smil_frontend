@@ -244,6 +244,132 @@
     "master": "碩士",
     "alumni": "校友"
   },
+  "life": {
+    "title": "實驗室生活 (Lab Life)",
+    "description": "記錄我們在學術研究之外的點點滴滴，包含研討會、聚餐與慶生活動。",
+    "contents": [
+      {
+        "id": "birthday2023",
+        "title": "老師生日快樂",
+        "date": "2023-03-28",
+        "subtitle": "2023.03 老師 52 大壽",
+        "carousel": [
+          {
+            "description": "52大壽了喔🎂 - 荃者得魚忘筌, 言者得意忘言, 研者得究忘研📚～",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/1-1024x768.jpg"
+          }
+        ]
+      },
+      {
+        "id": "weiya2023",
+        "title": "實驗室尾牙",
+        "date": "2023-01-06",
+        "subtitle": "2023.01.06 尾牙聚餐",
+        "carousel": [
+          {
+            "description": "尾牙聚餐合影",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/4-1024x768.jpg"
+          },
+          {
+            "description": "大家開心用餐",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/6-1024x768.jpg"
+          }
+        ]
+      },
+      {
+        "id": "apsipa2022",
+        "title": "APSIPA ASC 研討會",
+        "date": "2022-11-01",
+        "subtitle": "2022.11 APSIPA ASC",
+        "carousel": [
+          {
+            "description": "Sam Tsao presents his work",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/post_page/page/2012/A01_NTNUSMIL_@Y0NtsCc4S6-1685286451@_ori-1024x768.jpg"
+          },
+          {
+            "description": "Chao Fu An (Left) & Sam Tsao (Right)",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_apsipa2022-1@_ori-768x1024.jpg"
+          },
+          {
+            "description": "Sam Tsao presents his work",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/post_page/page/2012/A01_NTNUSMIL_@Y0NtsCc4S6-1685286458@_ori-768x1024.jpg"
+          }
+        ]
+      },
+      {
+        "id": "teacherday2022",
+        "title": "教師節",
+        "date": "2022-09-28",
+        "subtitle": "2022.09.28 教師節慶祝",
+        "carousel": [
+          {
+            "description": "教師節大合照",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-1@_ori-1024x768.jpg"
+          },
+          {
+            "description": "致贈卡片與禮物",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-2@_ori-1024x701.jpg"
+          },
+          {
+            "description": "實驗室聚餐",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-3@_ori-1024x717.jpg"
+          },
+          {
+            "description": "開心合影",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-4@_ori-1024x735.jpg"
+          }
+        ]
+      },
+      {
+        "id": "asru2019",
+        "title": "ASRU 研討會",
+        "date": "2019-12-01",
+        "subtitle": "2019 ASRU @ Singapore",
+        "carousel": [
+          {
+            "description": "Lo Tien Hong (Left) & Berlin Chen (Middle) & Lin Hsiao Yun (Right)",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_asru2019-1@_ori-1024x768.jpg"
+          }
+        ]
+      },
+      {
+        "id": "interspeech2017",
+        "title": "Interspeech 研討會",
+        "date": "2017-08-20",
+        "subtitle": "2017 Interspeech @ Stockholm",
+        "carousel": [
+          {
+            "description": "Chen Ying Wen & Berlin Chen",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_interspeech2017-1@_ori-768x1024.jpg"
+          }
+        ]
+      },
+      {
+        "id": "asru2017",
+        "title": "ASRU 研討會",
+        "date": "2017-12-16",
+        "subtitle": "2017 ASRU @ Okinawa",
+        "carousel": [
+          {
+            "description": "Lo Tien Hong presents his work",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_asru2017-1@_ori-1024x583.jpg"
+          }
+        ]
+      },
+      {
+        "id": "icassp2015",
+        "title": "ICASSP 研討會",
+        "date": "2015-04-19",
+        "subtitle": "2015 ICASSP @ Brisbane",
+        "carousel": [
+          {
+            "description": "Berlin Chen attending in place for a student",
+            "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_icassp2015-1@_ori-1024x768.jpg"
+          }
+        ]
+      }
+    ]
+  },
   "tags": {
     "0": "標籤0",
     "1": "校友",

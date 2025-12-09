@@ -377,8 +377,6 @@
     "3": "標籤3",
     "4": "標籤4"
   },
-  "login": "登入",
-  "logout": "登出",
   "footer": {
     "copyright": "Copyright © 2025 SMIL. All rights reserved.",
     "address": "116臺北市文山區汀州路四段88號 應用科學大樓206室",
@@ -388,6 +386,8 @@
     "github": "https://github.com/smil",
     "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
   },
+  "login": "登入",
+  "logout": "登出",
   "copied": "已複製",
   "clickToCopyAddress": "點擊複製地址",
   "clickToCopyEmail": "點擊複製電子郵件",

@@ -378,8 +378,6 @@
     "3": "Tag 3",
     "4": "Tag 4"
   },
-  "login": "Login",
-  "logout": "Logout",
   "footer": {
     "copyright": "Copyright © 2025 SMIL. All rights reserved.",
     "address": "Room 206, Applied Science Building, No.88, Sec. 4, Ting Zhou Rd., Wenshan Dist., Taipei City 116, Taiwan",
@@ -389,6 +387,8 @@
     "github": "https://github.com/smil",
     "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
   },
+  "login": "Login",
+  "logout": "Logout",
   "copied": "Copied",
   "clickToCopyAddress": "Click to copy address",
   "clickToCopyEmail": "Click to copy email",

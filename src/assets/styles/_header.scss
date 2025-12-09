@@ -1,26 +1,136 @@
 @use 'sass:map';
 @use './tokens' as *;
 
+$mobile-breakpoint: 991px;
+
 .app-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: $main-color;
+  background: $main-color; // Fallback
   background: rgba($main-color, var(--header-opacity, 1));
   box-shadow: var(--bs-box-shadow-sm, 0 10px 8px rgba(0, 0, 0, 0.1));
   padding: 7px 0;
-  transition:
-    background-color map.get($dur, normal) ease,
-    background map.get($dur, normal) ease,
-    box-shadow map.get($dur, normal) ease;
+  transition: background-color map.get($dur, normal) ease,
+              background map.get($dur, normal) ease,
+              box-shadow map.get($dur, normal) ease;
+
   .brand {
     color: #ffffff;
+    // 確保 Logo 在漢堡選單之上
+    position: relative;
+    z-index: 1002; 
+    
+    img {
+      // 手機版 Logo 可以稍微縮小一點避免擁擠
+      @media (max-width: 576px) {
+        width: 110px;
+        height: auto;
+      }
+    }
   }
-  .brand {
-    color: #ffffff;
+
+  // 漢堡按鈕樣式
+  .hamburger-btn {
+    display: none; // 電腦版隱藏
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1002; // 比遮罩高
+    
+    @media (max-width: $mobile-breakpoint) {
+      display: block;
+    }
+  }
+
+  // 遮罩樣式 (背景變暗)
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   .menu {
+    @media screen and (max-width: 1200px) {
+      .menu-link {
+        font-size: 0.8rem;
+      }
+    }
+    // === 手機版選單樣式 (側邊欄) ===
+    @media (max-width: $mobile-breakpoint) {
+      position: fixed;
+      top: 0;
+      right: -100%; // 預設藏在右邊
+      width: 280px; // 側邊欄寬度
+      height: 100vh;
+      background: rgba($main-color, 0.98); // 手機版背景要實心一點
+      padding: 80px 20px 40px;
+      transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 1001;
+      box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+      overflow-y: auto;
+
+      &.is-active {
+        right: 0; // 滑入
+      }
+
+      ul.nav-list {
+        flex-direction: column; // 改成垂直排列
+        gap: 15px !important;
+        width: 100%;
+      }
+
+      .menu-item {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      // 調整手機版連結樣式
+      .menu-link {
+        width: 100%;
+        justify-content: flex-start; // 文字靠左
+        padding: 10px 15px;
+        height: auto;
+        font-size: 1.1rem;
+      }
+      
+      // 手機版的分隔線
+      .menu-divider {
+        height: 1px;
+        background: rgba(255,255,255,0.15);
+        margin: 10px 0;
+      }
+
+      // 手機版語言切換按鈕調整
+      .lang-toggle {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      // 手機版登入按鈕調整
+      .login-btn {
+        width: 100%;
+        justify-content: center;
+        height: 45px;
+        margin-top: 10px;
+      }
+    }
+
+    // === 共用與桌面版樣式保留 ===
     ul { gap: 8px; }
 
     .menu-item {
@@ -36,13 +146,15 @@
         border-top-color: currentColor;
         transform: translateY(2px);
       }
-
-      /* 純 CSS 顯示子選單 */
-      &.has-submenu:hover > .submenu,
-      &.has-submenu:focus-within > .submenu {
-        display: block;
-        opacity: 1;
-        transform: translateY(0);
+      
+      // 手機版不使用 hover 顯示子選單，這裡建議保留給桌面版
+      @media (min-width: calc($mobile-breakpoint + 1px)) {
+        &.has-submenu:hover > .submenu,
+        &.has-submenu:focus-within > .submenu {
+          display: block;
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
 
@@ -58,17 +170,22 @@
       text-align: center;
       letter-spacing: 0.1em;
       border-radius: var(--bs-border-radius, 6px);
-      transition:
-        background map.get($dur, normal) ease,
-        color map.get($dur, normal) ease;
+      transition: background map.get($dur, normal) ease, color map.get($dur, normal) ease;
 
       &:hover {
         background: #30151525; 
         color: #2288bb;
       }
+      
+      // Active link style (當前頁面)
+      &.active {
+        color: #2288bb;
+        background: rgba(48, 21, 21, 0.15);
+      }
     }
 
     .submenu {
+      // 桌面版子選單樣式... (保持不變)
       position: absolute;
       left: 0;
       top: 100%;
@@ -81,9 +198,25 @@
       display: none;
       opacity: 0;
       transform: translateY(6px);
-      transition:
-        opacity map.get($dur, normal) ease,
-        transform map.get($dur, normal) ease;
+      transition: opacity map.get($dur, normal) ease, transform map.get($dur, normal) ease;
+      
+      // 手機版子選單 (如果有需要)
+      @media (max-width: $mobile-breakpoint) {
+        position: static; // 變成靜態流動
+        opacity: 1;
+        display: block; // 預設展開或另外做點擊展開
+        transform: none;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding-left: 20px;
+        color: #fff;
+        
+        .submenu-link {
+           color: rgba(255,255,255,0.8);
+           &:hover { background: rgba(255,255,255,0.1); }
+        }
+      }
 
       .submenu-link {
         display: block;
@@ -91,11 +224,9 @@
         padding: 8px 10px;
         color: $color-fg;
         border-radius: 6px;
-
         &:hover { background: rgba(125,125,125,.08); }
       }
 
-      /* 按鈕外觀重置成連結樣式（給語言切換） */
       .btn-as-link {
         background: none;
         border: none;
@@ -149,13 +280,8 @@
           transition: transform map.get($dur, normal) ease;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           
-          &.zh {
-            transform: translateX(0);
-          }
-          
-          &.en {
-            transform: translateX(22px);
-          }
+          &.zh { transform: translateX(0); }
+          &.en { transform: translateX(22px); }
         }
       }
       
@@ -163,6 +289,7 @@
         background-color: rgba(255, 255, 255, 0.4);
       }
     }
+
     .login-btn {
       display: flex;
       align-items: center;

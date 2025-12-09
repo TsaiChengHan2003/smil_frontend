@@ -1,0 +1,560 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3.5rem 1.75rem 4.5rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.pageTitle {
+  color: #526480;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-bottom: 3rem;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-out 0.2s backwards;
+}
+
+.section {
+  margin-bottom: 4rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+
+  &.professorSection {
+    margin-bottom: 5rem;
+    animation: fadeInUp 0.8s ease-out 0.1s forwards;
+  }
+
+  &.sectionScroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    
+    &[data-section-index="0"] {
+      animation-delay: 0.1s;
+      animation: fadeInUp 0.6s ease-out 0.1s forwards;
+    }
+    
+    &[data-section-index="1"] {
+      animation-delay: 0.2s;
+      animation: fadeInUp 0.6s ease-out 0.2s forwards;
+    }
+    
+    &[data-section-index="2"] {
+      animation-delay: 0.3s;
+      animation: fadeInUp 0.6s ease-out 0.3s forwards;
+    }
+    
+    &[data-section-index="3"] {
+      animation-delay: 0.4s;
+      animation: fadeInUp 0.6s ease-out 0.4s forwards;
+    }
+  }
+}
+
+.sectionTitle {
+  color: #526480;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(82, 100, 128, 0.15);
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #4e6fae 0%, rgb(137, 167, 226) 100%);
+    border-radius: 2px;
+  }
+}
+
+.membersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.memberCard {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+
+  &.cardVisible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    animation: slideInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15);
+  }
+
+  // 博士類型 - 藍色主題
+  &.typeDoctor {
+    border-top: 3px solid transparent;
+    
+    &:hover {
+      border-top-color: #4e6fae;
+      box-shadow: 0 16px 40px rgba(78, 111, 174, 0.2);
+    }
+
+    .avatarWrapper {
+      border-color: rgba(78, 111, 174, 0.2);
+      
+      .memberCard:hover & {
+        border-color: rgba(78, 111, 174, 0.4);
+        box-shadow: 0 6px 20px rgba(78, 111, 174, 0.25);
+      }
+    }
+
+    .memberName {
+      color: #4e6fae;
+    }
+  }
+
+  // 碩士類型 - 紫色主題
+  &.typeMaster {
+    border-top: 3px solid transparent;
+    
+    &:hover {
+      border-top-color: #7c5fa6;
+      box-shadow: 0 16px 40px rgba(124, 95, 166, 0.2);
+    }
+
+    .avatarWrapper {
+      border-color: rgba(124, 95, 166, 0.2);
+      
+      .memberCard:hover & {
+        border-color: rgba(124, 95, 166, 0.4);
+        box-shadow: 0 6px 20px rgba(124, 95, 166, 0.25);
+      }
+    }
+
+    .memberName {
+      color: #7c5fa6;
+    }
+  }
+}
+
+.avatarWrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  border: 4px solid rgba(82, 100, 128, 0.1);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .memberCard:hover & {
+    transform: scale(1.08) rotate(5deg);
+    border-color: rgba(82, 100, 128, 0.3);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2);
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.memberInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.memberName {
+  color: #526480;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.memberContent {
+  height: 80px;
+  color: #97949b;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+  min-height: 80px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.memberFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+  gap: 1rem;
+}
+
+
+.iconsWrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #526480;
+  background-color: rgba(82, 100, 128, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover:not(.iconDisabled) {
+    background-color: rgba(82, 100, 128, 0.15);
+    color: #526480;
+    transform: scale(1.1);
+  }
+
+  &.iconDisabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+// 教授卡片樣式
+.professorCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  border: 2px solid rgba(82, 100, 128, 0.1);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #4e6fae 0%, rgb(137, 167, 226) 50%, #4e6fae 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  &.cardVisible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 16px 50px rgba(15, 23, 42, 0.15);
+    border-color: rgba(82, 100, 128, 0.2);
+  }
+}
+
+.professorContent {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+.professorAvatarWrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(82, 100, 128, 0.15);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+  flex-shrink: 0;
+  transition: all 0.4s ease;
+
+  .professorCard:hover & {
+    transform: scale(1.05);
+    border-color: rgba(82, 100, 128, 0.25);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
+  }
+}
+
+.professorAvatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.professorInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.professorHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.professorName {
+  color: #526480;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1.2;
+  
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+}
+
+.professorTitle {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: linear-gradient(135deg, #4e6fae 0%, rgb(137, 167, 226) 100%);
+  color: #ffffff;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 12px rgba(78, 111, 174, 0.3);
+}
+
+.professorDescription {
+  color: #97949b;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+  text-align: left;
+  
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.professorContact {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #526480;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(4px);
+  }
+
+  svg {
+    color: #4e6fae;
+    flex-shrink: 0;
+  }
+}
+
+.contactLink {
+  color: #526480;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #4e6fae;
+    text-decoration: underline;
+  }
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin-left: 0.5rem;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2.5rem 1.25rem 3.25rem;
+  }
+
+  .pageTitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .memberCard {
+    padding: 1rem;
+  }
+
+  .avatarWrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .memberName {
+    font-size: 1.1rem;
+  }
+
+  .memberContent {
+    font-size: 0.85rem;
+  }
+
+  .memberFooter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+
+
+  .iconsWrapper {
+    justify-content: center;
+  }
+}

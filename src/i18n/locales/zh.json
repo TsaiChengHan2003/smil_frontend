@@ -28,6 +28,20 @@
     "meetingFraquencyTitle": "每週會議次數",
     "meetingFraquency": "一週兩次"
   },
+  "members": {
+    "title": "實驗室成員",
+    "professor": "教授",
+    "doctor": "博士",
+    "master": "碩士",
+    "alumni": "校友"
+  },
+  "tags": {
+    "0": "標籤0",
+    "1": "校友",
+    "2": "標籤2",
+    "3": "標籤3",
+    "4": "標籤4"
+  },
   "login": "登入",
   "logout": "登出",
   "footer": {

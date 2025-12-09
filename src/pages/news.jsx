@@ -1,7 +1,9 @@
+import Fragment from "@/components/common/Fragment";
+
 export default function News() {
   return (
-    <div>
+    <Fragment>
       <h1>News</h1>
-    </div>
+    </Fragment>
   )
 }

@@ -29,6 +29,20 @@
     "meetingFraquencyTitle": "Weekly Meeting Frequency",
     "meetingFraquency": "twice a week"
   },
+  "members": {
+    "title": "Members",
+    "professor": "Professor",
+    "doctor": "Doctor",
+    "master": "Master",
+    "alumni": "Alumni"
+  },
+  "tags": {
+    "0": "Tag 0",
+    "1": "Alumni",
+    "2": "Tag 2",
+    "3": "Tag 3",
+    "4": "Tag 4"
+  },
   "login": "Login",
   "logout": "Logout",
   "footer": {

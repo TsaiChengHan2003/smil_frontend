@@ -21,6 +21,7 @@ export default defineConfig({
       '@styles': path.resolve(__dirname, './src/assets/styles'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@utils': path.resolve(__dirname, './src/utils'),
+      '@datas': path.resolve(__dirname, './src/datas'),
     },
     extensions: ['.js', '.jsx', '.json', '.scss'],
   },

@@ -31,7 +31,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/member" element={<Member />} />
+          <Route path="/members" element={<Member />} />
           <Route path="/news" element={<News />} />
           <Route path="/research" element={<Research />} />
           <Route path="/life" element={<Life />} />

@@ -1,7 +1,9 @@
+import Fragment from "@/components/common/Fragment";
+
 export default function Research() {
   return (
-    <div>
+    <Fragment>
       <h1>Research</h1>
-    </div>
+    </Fragment>
   )
 }

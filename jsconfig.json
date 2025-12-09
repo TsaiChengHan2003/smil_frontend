@@ -9,7 +9,8 @@
       "@assets/*": ["assets/*"],
       "@styles/*": ["assets/styles/*"],
       "@hooks/*": ["hooks/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@datas/*": ["datas/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

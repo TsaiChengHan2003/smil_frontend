@@ -96,9 +96,7 @@ export default function Achievements() {
                 {group.list.map((paper, index) => (
                   <div key={paper.id || index} className={styles.paperRow}>
                     
-                    {/* 左側：使用 Tags 組件渲染 */}
                     <div className={styles.rowLeft}>
-                      {/* ★ 直接傳入 tags 字串，例如 "3" */}
                       <Tags tags={paper.tags} />
                     </div>
 

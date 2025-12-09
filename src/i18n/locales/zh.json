@@ -28,6 +28,215 @@
     "meetingFraquencyTitle": "每週會議次數",
     "meetingFraquency": "一週兩次"
   },
+  "research": {
+    "description": "實驗室研究領域",
+    "contents": [
+      {
+        "id": "speech_signal_processing",
+        "title": "語音訊號處理 (Speech Signal Processing)",
+        "description": "涵蓋語音辨識、語者識別及口語評測等核心技術研究。",
+        "subtitles": [
+          {
+            "label": "大詞彙連續語音辨識",
+            "en_label": "Large Vocabulary Continuous Speech Recognition (LVCSR)",
+            "url": "/research/lvcsr",
+            "content": "針對自然口語中詞彙量龐大且連續發音的特性，開發高效能的解碼器與聲學模型，解決連音、變調及噪音干擾問題。",
+            "application": "智慧語音助理、自動會議記錄、即時字幕生成。",
+            "imageUrl": "/images/research/lvcsr.jpg"
+          },
+          {
+            "label": "關鍵詞檢測與語詞辨識",
+            "en_label": "Keyword Spotting and Word Recognition",
+            "url": "/research/keyword-spotting",
+            "content": "在連續語音流中精準偵測特定喚醒詞或關鍵指令，強調低延遲與高抗噪能力的模型設計。",
+            "application": "裝置語音喚醒 (Wake-word detection)、語音指令控制。",
+            "imageUrl": "/images/research/kws.jpg"
+          },
+          {
+            "label": "鑑別式聲學特徵擷取",
+            "en_label": "Discriminative Acoustic Feature Extraction",
+            "url": "/research/feature-extraction",
+            "content": "利用深度神經網路提取具備高區辨力的語音特徵向量，以提升後端模型在複雜環境下的辨識率。",
+            "application": "強健性語音辨識前端處理。",
+            "imageUrl": "/images/research/feature.jpg"
+          },
+          {
+            "label": "聲學與語言模型技術",
+            "en_label": "Supervised/Unsupervised Acoustic and Language Modeling",
+            "url": "/research/acoustic-language-modeling",
+            "content": "探討監督式與非監督式學習方法，優化聲學模型對聲音的建模能力以及語言模型對語意的預測能力。",
+            "application": "低資源語言辨識、領域適應性模型訓練。",
+            "imageUrl": "/images/research/alm.jpg"
+          },
+          {
+            "label": "情境感知偏置與校正",
+            "en_label": "Contextual Biasing",
+            "url": "/research/contextual-biasing",
+            "content": "利用對話情境或外部知識庫資訊，動態調整辨識權重，提升特定領域術語或人名的辨識準確度。",
+            "application": "個人化聯絡人辨識、特定專業領域語音輸入。",
+            "imageUrl": "/images/research/biasing.jpg"
+          },
+          {
+            "label": "語句確認與信心度估測",
+            "en_label": "Utterance Verification and Confidence Measure",
+            "url": "/research/utterance-verification",
+            "content": "評估語音辨識結果的可靠程度，並過濾非目標語音或背景雜訊，確保系統回應的正確性。",
+            "application": "對話系統錯誤拒絕機制、電腦輔助語言學習。",
+            "imageUrl": "/images/research/confidence.jpg"
+          },
+          {
+            "label": "語者調適技術",
+            "en_label": "Speaker Adaptation",
+            "url": "/research/speaker-adaptation",
+            "content": "利用少量語者資料微調通用模型，使其能快速適應特定使用者的口音與發話特徵。",
+            "application": "個人化語音助理。",
+            "imageUrl": "/images/research/adaptation.jpg"
+          },
+          {
+            "label": "口語對話系統",
+            "en_label": "Spoken Dialogue Systems",
+            "url": "/research/dialogue-systems",
+            "content": "整合語音辨識、語意理解與對話管理，實現人機之間流暢且具目標導向的口語互動。",
+            "application": "智慧客服機器人、車載語音系統。",
+            "imageUrl": "/images/research/sds.jpg"
+          },
+          {
+            "label": "自動化口語與發音評測",
+            "en_label": "Automated Speaking / Pronunciation Assessment",
+            "url": "/research/speaking-assessment",
+            "content": "運用語音訊號處理技術，針對發音準確度、流暢度及韻律進行自動化評分與錯誤診斷。",
+            "application": "電腦輔助語言學習 (CALL)、英語口說檢定自動評分。",
+            "imageUrl": "/images/research/assessment.jpg"
+          }
+        ]
+      },
+      {
+        "id": "information_retrieval",
+        "title": "資訊檢索 (Information Retrieval)",
+        "description": "專注於從大量文本與語音數據中精準獲取資訊的技術。",
+        "subtitles": [
+          {
+            "label": "檢索模型與查詢形成",
+            "en_label": "Retrieval Modeling and Query Formulation",
+            "url": "/research/retrieval-modeling",
+            "content": "研究機率模型與向量空間模型，並透過查詢擴展與重寫技術，提升檢索結果的相關性。",
+            "application": "搜尋引擎優化、智慧問答系統。",
+            "imageUrl": "/images/research/ir-model.jpg"
+          },
+          {
+            "label": "文件表示法與強健性音訊索引",
+            "en_label": "Document Representation and Robust Audio Indexing",
+            "url": "/research/audio-indexing",
+            "content": "將語音內容轉換為可檢索的索引結構，克服語音辨識錯誤對檢索效能的影響。",
+            "application": "語音文件檢索 (Spoken Document Retrieval)、Podcast 搜尋。",
+            "imageUrl": "/images/research/indexing.jpg"
+          },
+          {
+            "label": "多語言資訊檢索",
+            "en_label": "Multilingual Information Retrieval",
+            "url": "/research/multilingual-ir",
+            "content": "跨越語言障礙，實現使用者以母語查詢外語文件的技術。",
+            "application": "跨國專利檢索、多語言新聞聚合。",
+            "imageUrl": "/images/research/multi-lang.jpg"
+          },
+          {
+            "label": "語音多媒體資訊檢索",
+            "en_label": "Speech-based Multimedia Information Retrieval",
+            "url": "/research/multimedia-ir",
+            "content": "結合語音、文字與影像特徵，針對影音內容進行深層語意檢索。",
+            "application": "YouTube 影片搜尋、影音資料庫管理。",
+            "imageUrl": "/images/research/multimedia.jpg"
+          },
+          {
+            "label": "關鍵詞與主題擷取",
+            "en_label": "Keyword/Topic-word Extraction",
+            "url": "/research/keyword-extraction",
+            "content": "自動分析文件或語音內容，提煉出最具代表性的關鍵詞彙與潛在主題。",
+            "application": "自動標籤生成、趨勢分析。",
+            "imageUrl": "/images/research/extraction.jpg"
+          },
+          {
+            "label": "文件分群與分類",
+            "en_label": "Document Segmentation, Classification and Clustering",
+            "url": "/research/doc-clustering",
+            "content": "針對海量文件進行自動化結構分析、類別判斷與群集化處理。",
+            "application": "新聞自動分類、電子郵件過濾。",
+            "imageUrl": "/images/research/clustering.jpg"
+          }
+        ]
+      },
+      {
+        "id": "natural_language_processing",
+        "title": "自然語言處理 (Natural Language Processing)",
+        "description": "研究電腦理解、生成與處理人類語言的技術。",
+        "subtitles": [
+          {
+            "label": "詞性標註與語法語意解析",
+            "en_label": "POS Tagging, Syntactic/Semantic Parsing",
+            "url": "/research/parsing",
+            "content": "分析句子的文法結構與深層語意邏輯，是所有高階 NLP 應用的基礎。",
+            "application": "語意理解引擎、情感分析。",
+            "imageUrl": "/images/research/parsing.jpg"
+          },
+          {
+            "label": "語音摘要技術",
+            "en_label": "Speech Summarization",
+            "url": "/research/summarization",
+            "content": "整合異質資訊來源，將冗長的語音或會議記錄自動濃縮為精簡摘要。",
+            "application": "會議自動摘要、新聞速覽生成。",
+            "imageUrl": "/images/research/summary.jpg"
+          },
+          {
+            "label": "機器翻譯",
+            "en_label": "Machine Translation",
+            "url": "/research/translation",
+            "content": "利用類神經網路序列生成技術，實現高品質的自動語言轉換。",
+            "application": "即時語音翻譯機、跨語言溝通工具。",
+            "imageUrl": "/images/research/mt.jpg"
+          },
+          {
+            "label": "智慧中文輸入與自動標題生成",
+            "en_label": "Intelligent Input and Title Generation",
+            "url": "/research/input-generation",
+            "content": "結合語言模型預測使用者意圖，以及自動為文章生成吸睛標題。",
+            "application": "智慧輸入法、內容管理系統。",
+            "imageUrl": "/images/research/input.jpg"
+          },
+          {
+            "label": "自動作文評分",
+            "en_label": "Automated Essay Scoring",
+            "url": "/research/essay-scoring",
+            "content": "綜合考量文章的詞彙豐富度、語法正確性與組織結構，進行自動化評級。",
+            "application": "大規模寫作測驗閱卷、寫作輔助教學。",
+            "imageUrl": "/images/research/essay.jpg"
+          }
+        ]
+      },
+      {
+        "id": "ai_neural_networks",
+        "title": "人工智慧與類神經網路 (AI & Neural Networks)",
+        "description": "探索最前沿的機器學習演算法與知識表示法。",
+        "subtitles": [
+          {
+            "label": "搜尋演算法與機器學習",
+            "en_label": "Search Algorithms and Machine Learning Techniques",
+            "url": "/research/ml-algorithms",
+            "content": "研究高效能的搜尋策略與新穎的機器學習架構，解決複雜的最佳化問題。",
+            "application": "推薦系統、路徑規劃。",
+            "imageUrl": "/images/research/ml.jpg"
+          },
+          {
+            "label": "語意與知識表示",
+            "en_label": "Semantic and Knowledge Representations",
+            "url": "/research/knowledge-rep",
+            "content": "將人類知識轉化為機器可理解的結構化形式，如知識圖譜與向量表示。",
+            "application": "知識問答系統、推論引擎。",
+            "imageUrl": "/images/research/knowledge.jpg"
+          }
+        ]
+      }
+    ]
+  },
   "members": {
     "title": "實驗室成員",
     "professor": "教授",

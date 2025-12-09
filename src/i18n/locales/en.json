@@ -29,6 +29,215 @@
     "meetingFraquencyTitle": "Weekly Meeting Frequency",
     "meetingFraquency": "twice a week"
   },
+  "research": {
+    "description": "Research domains of the lab",
+    "contents": [
+      {
+        "id": "speech_signal_processing",
+        "title": "Speech Signal Processing",
+        "description": "Covering core technologies such as speech recognition, speaker identification, and spoken assessment.",
+        "subtitles": [
+          {
+            "label": "Large Vocabulary Continuous Speech Recognition (LVCSR)",
+            "en_label": "Large Vocabulary Continuous Speech Recognition (LVCSR)",
+            "url": "/research/lvcsr",
+            "content": "Developing high-performance decoders and acoustic models tailored for natural speech with large vocabularies, addressing challenges such as co-articulation, tone variation, and noise interference.",
+            "application": "Smart voice assistants, automated meeting transcription, real-time captioning.",
+            "imageUrl": "/images/research/lvcsr.jpg"
+          },
+          {
+            "label": "Keyword Spotting and Word Recognition",
+            "en_label": "Keyword Spotting and Word Recognition",
+            "url": "/research/keyword-spotting",
+            "content": "Accurately detecting specific wake-words or key commands in continuous speech streams, emphasizing low-latency and noise-robust model designs.",
+            "application": "Wake-word detection, voice command control.",
+            "imageUrl": "/images/research/kws.jpg"
+          },
+          {
+            "label": "Discriminative Acoustic Feature Extraction",
+            "en_label": "Discriminative Acoustic Feature Extraction",
+            "url": "/research/feature-extraction",
+            "content": "Utilizing deep neural networks to extract highly discriminative speech feature vectors to improve backend model recognition rates in complex environments.",
+            "application": "Robust speech recognition front-end processing.",
+            "imageUrl": "/images/research/feature.jpg"
+          },
+          {
+            "label": "Supervised/Unsupervised Acoustic and Language Modeling",
+            "en_label": "Supervised/Unsupervised Acoustic and Language Modeling",
+            "url": "/research/acoustic-language-modeling",
+            "content": "Exploring supervised and unsupervised learning methods to optimize acoustic models for sound modeling and language models for semantic prediction.",
+            "application": "Low-resource language recognition, domain-adaptive model training.",
+            "imageUrl": "/images/research/alm.jpg"
+          },
+          {
+            "label": "Contextual Biasing",
+            "en_label": "Contextual Biasing",
+            "url": "/research/contextual-biasing",
+            "content": "Dynamically adjusting recognition weights using dialogue contexts or external knowledge bases to improve accuracy for domain-specific terminology or proper names.",
+            "application": "Personalized contact recognition, professional domain voice input.",
+            "imageUrl": "/images/research/biasing.jpg"
+          },
+          {
+            "label": "Utterance Verification and Confidence Measure",
+            "en_label": "Utterance Verification and Confidence Measure",
+            "url": "/research/utterance-verification",
+            "content": "Assessing the reliability of speech recognition results and filtering out non-target speech or background noise to ensure system response accuracy.",
+            "application": "Dialogue system error rejection mechanisms, Computer-Assisted Language Learning (CALL).",
+            "imageUrl": "/images/research/confidence.jpg"
+          },
+          {
+            "label": "Speaker Adaptation",
+            "en_label": "Speaker Adaptation",
+            "url": "/research/speaker-adaptation",
+            "content": "Fine-tuning general models with small amounts of speaker data to quickly adapt to specific user accents and speaking characteristics.",
+            "application": "Personalized voice assistants.",
+            "imageUrl": "/images/research/adaptation.jpg"
+          },
+          {
+            "label": "Spoken Dialogue Systems",
+            "en_label": "Spoken Dialogue Systems",
+            "url": "/research/dialogue-systems",
+            "content": "Integrating speech recognition, semantic understanding, and dialogue management to achieve fluent and goal-oriented human-machine interaction.",
+            "application": "Smart customer service bots, in-car voice systems.",
+            "imageUrl": "/images/research/sds.jpg"
+          },
+          {
+            "label": "Automated Speaking / Pronunciation Assessment",
+            "en_label": "Automated Speaking / Pronunciation Assessment",
+            "url": "/research/speaking-assessment",
+            "content": "Applying speech signal processing techniques to automatically evaluate and diagnose pronunciation accuracy, fluency, and prosody.",
+            "application": "Computer-Assisted Language Learning (CALL), automated speaking proficiency tests.",
+            "imageUrl": "/images/research/assessment.jpg"
+          }
+        ]
+      },
+      {
+        "id": "information_retrieval",
+        "title": "Information Retrieval",
+        "description": "Focusing on technologies to accurately extract information from massive text and speech data.",
+        "subtitles": [
+          {
+            "label": "Retrieval Modeling and Query Formulation",
+            "en_label": "Retrieval Modeling and Query Formulation",
+            "url": "/research/retrieval-modeling",
+            "content": "Researching probabilistic and vector space models, enhancing retrieval relevance through query expansion and rewriting techniques.",
+            "application": "Search engine optimization (SEO), intelligent QA systems.",
+            "imageUrl": "/images/research/ir-model.jpg"
+          },
+          {
+            "label": "Document Representation and Robust Audio Indexing",
+            "en_label": "Document Representation and Robust Audio Indexing",
+            "url": "/research/audio-indexing",
+            "content": "Converting spoken content into retrievable index structures, overcoming the impact of speech recognition errors on retrieval performance.",
+            "application": "Spoken Document Retrieval (SDR), Podcast search.",
+            "imageUrl": "/images/research/indexing.jpg"
+          },
+          {
+            "label": "Multilingual Information Retrieval",
+            "en_label": "Multilingual Information Retrieval",
+            "url": "/research/multilingual-ir",
+            "content": "Bridging language barriers to allow users to query foreign language documents using their native language.",
+            "application": "Cross-border patent search, multilingual news aggregation.",
+            "imageUrl": "/images/research/multi-lang.jpg"
+          },
+          {
+            "label": "Speech-based Multimedia Information Retrieval",
+            "en_label": "Speech-based Multimedia Information Retrieval",
+            "url": "/research/multimedia-ir",
+            "content": "Combining speech, text, and visual features to perform deep semantic retrieval on audio-visual content.",
+            "application": "Video search platforms, audio-visual database management.",
+            "imageUrl": "/images/research/multimedia.jpg"
+          },
+          {
+            "label": "Keyword/Topic-word Extraction",
+            "en_label": "Keyword/Topic-word Extraction",
+            "url": "/research/keyword-extraction",
+            "content": "Automatically analyzing documents or spoken content to extract the most representative keywords and latent topics.",
+            "application": "Automatic tag generation, trend analysis.",
+            "imageUrl": "/images/research/extraction.jpg"
+          },
+          {
+            "label": "Document Segmentation, Classification and Clustering",
+            "en_label": "Document Segmentation, Classification and Clustering",
+            "url": "/research/doc-clustering",
+            "content": "Performing automated structural analysis, categorization, and clustering on massive collections of documents.",
+            "application": "Automatic news categorization, email filtering.",
+            "imageUrl": "/images/research/clustering.jpg"
+          }
+        ]
+      },
+      {
+        "id": "natural_language_processing",
+        "title": "Natural Language Processing",
+        "description": "Researching technologies for computers to understand, generate, and process human language.",
+        "subtitles": [
+          {
+            "label": "POS Tagging, Syntactic/Semantic Parsing",
+            "en_label": "POS Tagging, Syntactic/Semantic Parsing",
+            "url": "/research/parsing",
+            "content": "Analyzing grammatical structures and deep semantic logic of sentences, serving as the foundation for high-level NLP applications.",
+            "application": "Semantic understanding engines, sentiment analysis.",
+            "imageUrl": "/images/research/parsing.jpg"
+          },
+          {
+            "label": "Speech Summarization",
+            "en_label": "Speech Summarization",
+            "url": "/research/summarization",
+            "content": "Integrating heterogeneous information sources to condense lengthy speech or meeting records into concise summaries.",
+            "application": "Automatic meeting summarization, news digest generation.",
+            "imageUrl": "/images/research/summary.jpg"
+          },
+          {
+            "label": "Machine Translation",
+            "en_label": "Machine Translation",
+            "url": "/research/translation",
+            "content": "Utilizing neural network sequence generation techniques to achieve high-quality automated language translation.",
+            "application": "Real-time speech translators, cross-language communication tools.",
+            "imageUrl": "/images/research/mt.jpg"
+          },
+          {
+            "label": "Intelligent Input and Title Generation",
+            "en_label": "Intelligent Input and Title Generation",
+            "url": "/research/input-generation",
+            "content": "Combining language models to predict user intent and automatically generating engaging titles for articles.",
+            "application": "Intelligent input methods (IMEs), content management systems.",
+            "imageUrl": "/images/research/input.jpg"
+          },
+          {
+            "label": "Automated Essay Scoring",
+            "en_label": "Automated Essay Scoring",
+            "url": "/research/essay-scoring",
+            "content": "Automatically grading essays by comprehensively considering vocabulary richness, grammatical correctness, and organizational structure.",
+            "application": "Large-scale writing test grading, writing tutoring systems.",
+            "imageUrl": "/images/research/essay.jpg"
+          }
+        ]
+      },
+      {
+        "id": "ai_neural_networks",
+        "title": "Artificial Intelligence & Neural Networks",
+        "description": "Exploring cutting-edge machine learning algorithms and knowledge representations.",
+        "subtitles": [
+          {
+            "label": "Search Algorithms and Machine Learning Techniques",
+            "en_label": "Search Algorithms and Machine Learning Techniques",
+            "url": "/research/ml-algorithms",
+            "content": "Researching high-performance search strategies and novel machine learning architectures to solve complex optimization problems.",
+            "application": "Recommendation systems, path planning.",
+            "imageUrl": "/images/research/ml.jpg"
+          },
+          {
+            "label": "Semantic and Knowledge Representations",
+            "en_label": "Semantic and Knowledge Representations",
+            "url": "/research/knowledge-rep",
+            "content": "Transforming human knowledge into machine-understandable structured forms, such as knowledge graphs and vector representations.",
+            "application": "Knowledge-based QA systems, inference engines.",
+            "imageUrl": "/images/research/knowledge.jpg"
+          }
+        ]
+      }
+    ]
+  },
   "members": {
     "title": "Members",
     "professor": "Professor",

@@ -9,6 +9,7 @@ import About from './pages/about'
 import Member from './pages/member'
 import News from './pages/news'
 import Research from './pages/research'
+import ResearchDetail from './pages/researchDetail'
 import Life from './pages/life'
 import Achievements from './pages/achievements'
 
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/members" element={<Member />} />
           <Route path="/news" element={<News />} />
           <Route path="/research" element={<Research />} />
+          <Route path="/research/:url" element={<ResearchDetail />} />
           <Route path="/life" element={<Life />} />
           <Route path="/achievements" element={<Achievements />} />
         </Routes>

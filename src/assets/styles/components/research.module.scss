@@ -1,0 +1,478 @@
+/* =========================================
+   1. 定義顏色變數與主題 (Color Themes)
+   ========================================= */
+
+   .container {
+    // 預設變數 (Fallback)
+    --theme-primary: #4e6fae;
+    --theme-primary-light: rgba(78, 111, 174, 0.08);
+    --theme-gradient: linear-gradient(135deg, #4e6fae 0%, rgb(137, 167, 226) 100%);
+    
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  // 主題配置
+  [data-theme="speech_signal_processing"] {
+    --theme-primary: #4e6fae;
+    --theme-primary-light: rgba(78, 111, 174, 0.08);
+    --theme-gradient: linear-gradient(135deg, #4e6fae 0%, #89a7e2 100%);
+  }
+  
+  [data-theme="information_retrieval"] {
+    --theme-primary: #059669;
+    --theme-primary-light: rgba(5, 150, 105, 0.08);
+    --theme-gradient: linear-gradient(135deg, #059669 0%, #34d399 100%);
+  }
+  
+  [data-theme="natural_language_processing"] {
+    --theme-primary: #7c3aed;
+    --theme-primary-light: rgba(124, 58, 237, 0.08);
+    --theme-gradient: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+  }
+  
+  [data-theme="ai_neural_networks"] {
+    --theme-primary: #ea580c;
+    --theme-primary-light: rgba(234, 88, 12, 0.08);
+    --theme-gradient: linear-gradient(135deg, #ea580c 0%, #fb923c 100%);
+  }
+  
+  /* =========================================
+     2. 動畫 (Animations)
+     ========================================= */
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* =========================================
+     3. 首頁列表結構 (List Layout)
+     ========================================= */
+  
+  .pageTitle {
+    color: #526480;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out 0.2s backwards;
+  }
+  
+  .categorySection {
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.6s ease-out backwards;
+    position: relative;
+    
+    // 外框樣式
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+    padding: 0.5rem; 
+  
+    &:nth-child(2) { animation-delay: 0.1s; }
+    &:nth-child(3) { animation-delay: 0.2s; }
+    &:nth-child(4) { animation-delay: 0.3s; }
+    &:nth-child(5) { animation-delay: 0.4s; }
+  }
+  
+  /* --- 可收合標題區 (Header) --- */
+  
+  .categoryHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    transition: background-color 0.2s ease;
+    user-select: none;
+  
+    &:hover {
+      background-color: rgba(15, 23, 42, 0.02);
+    }
+  }
+  
+  .headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .categoryTitle {
+    color: #526480;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  
+    // 左側主題色裝飾條
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.4rem;
+      background: var(--theme-gradient);
+      border-radius: 2px;
+    }
+  }
+  
+  .categoryDescription {
+    color: #97949b;
+    font-size: 0.95rem;
+    margin: 0;
+    padding-left: 1rem;
+  }
+  
+  .toggleIcon {
+    color: #97949b;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 24px;
+  }
+  
+  // 旋轉箭頭
+  .isCollapsed .toggleIcon {
+    transform: rotate(-90deg);
+  }
+  
+  /* --- 收合動畫區 (Accordion Logic) --- */
+  
+  .collapsibleWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &.collapsed {
+      grid-template-rows: 0fr;
+    }
+  }
+  
+  .innerContent {
+    overflow: hidden;
+    // ★ 關鍵修復：這裡設定展開時的 padding 與透明度
+    padding: 0 1rem 1.5rem 1rem;
+    opacity: 1;
+    transition: padding 0.4s ease, opacity 0.3s ease;
+  }
+  
+  // ★ 關鍵修復：當收合時，強制移除 padding 並變透明，避免露出一點點顏色
+  .collapsibleWrapper.collapsed .innerContent {
+    padding-bottom: 0;
+    padding-top: 0;
+    opacity: 0;
+    visibility: hidden; // 確保完全隱藏
+  }
+  
+  /* --- 卡片網格 (Cards) --- */
+  
+  .subtitlesGrid {
+    display: grid;
+    // 縮小版卡片：最小寬度 220px
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .subtitleCard {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+      // 邊框變為主題色
+      border-color: var(--theme-primary-light);
+    }
+  }
+  
+  .subtitleImageWrapper {
+    width: 100%;
+    height: 110px; // 高度縮小
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .subtitleImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  
+    .subtitleCard:hover & {
+      transform: scale(1.08);
+    }
+  }
+  
+  .imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // 背景為主題漸層
+    background: var(--theme-gradient);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .subtitleContent {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+  }
+  
+  .subtitleLabel {
+    color: #526480;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+  }
+  
+  .subtitlePreview {
+    color: #97949b;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .subtitleFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(15, 23, 42, 0.06);
+  }
+  
+  .readMore {
+    // 文字為主題色
+    color: var(--theme-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  /* =========================================
+     8. 內頁詳情樣式 (Detail Page) - 補回這部分
+     ========================================= */
+  
+  .backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #526480;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      // 內頁 Hover 效果
+      background-color: var(--theme-primary-light);
+      color: var(--theme-primary);
+      transform: translateX(-4px);
+    }
+  
+    svg {
+      transition: transform 0.3s ease;
+    }
+  
+    &:hover svg {
+      transform: translateX(-4px);
+    }
+  }
+  
+  .detailArticle {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+    animation: fadeInUp 0.6s ease-out;
+  
+    @media (max-width: 768px) {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  .detailHeader {
+    margin-bottom: 2.5rem;
+  }
+  
+  .detailCategory {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    // 標籤背景色
+    background: var(--theme-gradient);
+    color: #ffffff;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1); 
+  }
+  
+  .detailTitle {
+    color: #526480;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.2;
+  
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  
+  .detailEnTitle {
+    color: #97949b;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.4;
+  
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .detailImageWrapper {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+  }
+  
+  .detailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .detailContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .detailSection {
+    animation: fadeInUp 0.6s ease-out backwards;
+  
+    &:nth-child(1) { animation-delay: 0.1s; }
+    &:nth-child(2) { animation-delay: 0.2s; }
+  }
+  
+  .sectionTitle {
+    color: #526480;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid rgba(82, 100, 128, 0.15);
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      // 標題底線
+      background: var(--theme-gradient);
+      border-radius: 2px;
+    }
+  }
+  
+  .sectionContent {
+    color: #97949b;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin: 0;
+    text-align: justify;
+  }
+  
+  .errorMessage {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #97949b;
+  
+    h2 {
+      color: #526480;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* =========================================
+     9. 響應式微調 (Responsive)
+     ========================================= */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem 1rem;
+    }
+    
+    .categoryHeader {
+      padding: 0.75rem 1rem;
+    }
+  
+    .categoryTitle {
+      font-size: 1.2rem;
+    }
+  
+    .subtitlesGrid {
+      grid-template-columns: 1fr; 
+    }
+    
+    .subtitleImageWrapper {
+      height: 140px; 
+    }
+  }

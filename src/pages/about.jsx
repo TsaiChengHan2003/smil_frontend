@@ -9,7 +9,7 @@ export default function About() {
   return (
     <Fragment>
       <div className={styles.container}>
-        {/* introduce，professor記得要放這邊 */}
+        {/* 教授介紹*/}
         <section className={styles.introSection}>
           <div className={styles.introText}>
             <h2 className={styles.title}>{about.introTitle}</h2>
@@ -24,7 +24,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* history */}
+        {/* 實驗室歷史 */}
         <section>
           <h2 className={styles.subtitle}>{about.historyTitle}</h2>
           <p>{about.historyContent}</p>
@@ -42,7 +42,7 @@ export default function About() {
           </ul>
         </section>
 
-        {/* if you want to join us */}
+        {/* 加入我們 */}
         <section>
           <div className="d-flex gap-2">
             <div className={styles.joinus}>

@@ -21,7 +21,7 @@ export const memberJson = [
     "email_url": "ntnuedu1822@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "public/images/27F37D74-EDFB-47DB-BD00-92C806391D29.jpeg"
+    "image_url": "public/images/members/Hsiao-Ting Lin.JPEG"
   },
   {
     "name": "王建鈞",

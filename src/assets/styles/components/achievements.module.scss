@@ -1,0 +1,224 @@
+@use 'sass:map';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pageTitle {
+  color: #526480;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.pageDescription {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
+}
+
+/* --- 控制列 (Search & Filter) --- */
+.controls {
+  display: flex;
+  flex-direction: column; // 改為直向排列，讓搜尋列在上方，年份在下方
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+  
+  @media (min-width: 768px) {
+    // 電腦版如果想要左右並排，可以改回 flex-direction: row;
+    // 但考慮到年份可能會換行，建議搜尋列獨立一行比較美觀
+    flex-direction: column; 
+    align-items: stretch;
+  }
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%; // 佔滿寬度
+  
+  svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+  }
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+
+  &:focus {
+    outline: none;
+    border-color: #4e6fae;
+    box-shadow: 0 0 0 2px rgba(78, 111, 174, 0.1);
+  }
+}
+
+/* ★ 修改重點 1: 年份過濾器改為自動換行 */
+.filterGroup {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap; // 允許換行
+  // 移除 overflow-x: auto; 
+}
+
+.filterBtn {
+  padding: 0.4rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #64748b;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+
+  &:hover { background: #f1f5f9; }
+
+  &.active {
+    background: #4e6fae;
+    color: #fff;
+    border-color: #4e6fae;
+  }
+}
+
+/* --- 列表區域 --- */
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.yearGroup {
+  animation: fadeInUp 0.4s ease-out backwards;
+}
+
+.yearLabel {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* --- 緊湊型論文列 --- */
+.paperRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.25rem 0.5rem; // 增加一點上下間距
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f8fafc;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+// ★ 修改重點 2: 增加左側寬度以容納長標籤
+.rowLeft {
+  flex-shrink: 0;
+  width: 140px; // ★ 建議：稍微縮小一點寬度，逼迫長文字換行，視覺上比較整齊 (原本160px)
+  padding-top: 6px; // 稍微調整頂部間距，讓標籤跟右邊標題的第一行對齊
+  display: flex;
+  justify-content: center; // 讓標籤在欄位中置中
+  align-items: flex-start; // 靠上對齊
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: flex-start; // 手機版靠左
+    align-items: center;
+  }
+}
+
+// 中間：主要內容
+.rowMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0; // 關鍵：防止 flex 子元素內容過長導致破版
+}
+
+.paperTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.5;
+  cursor: text;
+}
+
+.paperMeta {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.venueText {
+  color: #4e6fae;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+// 右側：操作按鈕
+.rowActions {
+  flex-shrink: 0;
+  display: flex;
+  gap: 1rem;
+  padding-top: 4px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+    width: 100%;
+    justify-content: flex-start;
+    border-top: 1px dashed #e2e8f0; // 手機版加個分隔線比較清楚
+    padding-top: 0.8rem;
+  }
+}
+
+.actionIcon {
+  color: #94a3b8;
+  transition: color 0.2s, transform 0.2s;
+  
+  &:hover {
+    color: #4e6fae;
+    transform: translateY(-2px);
+  }
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #94a3b8;
+  font-size: 1rem;
+}

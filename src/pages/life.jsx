@@ -3,6 +3,7 @@ import Fragment from "@/components/common/Fragment";
 import { useTranslation } from "react-i18next";
 import { X, ChevronLeft, ChevronRight, Image as ImageIcon } from "react-feather";
 import styles from "@/assets/styles/components/life.module.scss";
+import { life } from "@/datas/life";
 
 export default function Life() {
   const { t } = useTranslation();
@@ -13,7 +14,8 @@ export default function Life() {
   // 狀態：目前輪播顯示第幾張照片
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
-  const albums = lifeData?.contents || [];
+  // 這邊要串API拿資料
+  const albums = life;
 
   // 開啟相簿
   const openAlbum = (album) => {

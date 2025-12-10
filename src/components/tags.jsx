@@ -50,6 +50,26 @@ export default function Tags({ tags }) {
       label: t("tags.8"), 
       styles: { backgroundColor: "#475569", color: "#ffffff" } 
     },
+    // 9: 重要 - 紅色 (Red)
+    "9": { 
+      label: t("tags.9"), 
+      styles: { backgroundColor: "#ef4444", color: "#ffffff" } 
+    },
+    // 10: 日常 - 藍綠色 (Teal)
+    "10": { 
+      label: t("tags.10"), 
+      styles: { backgroundColor: "#14b8a6", color: "#ffffff" } 
+    },
+    // 11: 獲獎 (公告用) - 金色 (同 tag 5)
+    "11": { 
+      label: t("tags.11"), 
+      styles: { backgroundColor: "#f59e0b", color: "#ffffff" } 
+    },
+    // 12: 其他 - 灰色 (Gray)
+    "12": { 
+      label: t("tags.12"), 
+      styles: { backgroundColor: "#94a3b8", color: "#ffffff" } 
+    },
   }), [t]);
 
   // 如果沒有 tags，返回 null

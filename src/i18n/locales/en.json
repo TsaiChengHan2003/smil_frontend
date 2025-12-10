@@ -29,6 +29,32 @@
     "meetingFraquencyTitle": "Weekly Meeting Frequency",
     "meetingFraquency": "twice a week"
   },
+  "members": {
+    "title": "Members",
+    "professor": "Professor",
+    "doctor": "Doctor",
+    "master": "Master",
+    "alumni": "Alumni"
+  },
+  "news": {
+    "title": "News & Announcements",
+    "description": "Keep up with the latest lab news, meeting schedules, and internal matters.",
+    "sections": {
+      "conference": "Conference Submission Announcements",
+      "general": "General Announcements",
+      "internal": "Internal Meeting (Lab Members Only)"
+    },
+    "table": {
+      "deadline": "Deadline",
+      "conference": "Conference",
+      "location": "Location",
+      "conf_date": "Date",
+      "publish_date": "Date",
+      "category": "Category",
+      "subject": "Subject",
+      "publisher": "From"
+    }
+  },
   "research": {
     "description": "Research domains of the lab",
     "contents": [
@@ -242,13 +268,6 @@
     "title": "Lab Life",
     "description": "Memories beyond research, including conferences, parties, and celebrations."
   },
-  "members": {
-    "title": "Members",
-    "professor": "Professor",
-    "doctor": "Doctor",
-    "master": "Master",
-    "alumni": "Alumni"
-  },
   "achievements": {
     "title": "Research Achievements",
     "description": "Publications, patents, and awards of our laboratory.",
@@ -256,6 +275,24 @@
       "all": "All Years",
       "search_placeholder": "Search title, author or keyword..."
     }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 SMIL. All rights reserved.",
+    "address": "Room 206, Applied Science Building, No.88, Sec. 4, Ting Zhou Rd., Wenshan Dist., Taipei City 116, Taiwan",
+    "phone": "(02) 7734-6676 ext. 1234",
+    "fax": "(02) 2932-2378",
+    "email": "smil@ntnu.edu.tw",
+    "github": "https://github.com/smil",
+    "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
+  },
+  "meeting": {
+    "date": "Report Date",
+    "presenter": "Presenter",
+    "paper": "Paper Link/File",
+    "slides": "Slides File",
+    "upload_paper": "Upload Paper",
+    "upload_slides": "Upload Slides",
+    "url_placeholder": "Enter Paper URL..."
   },
   "tags": {
     "0": "Tag 0",
@@ -266,16 +303,11 @@
     "5": "Award",
     "6": "Domestic Conference",
     "7": "Book Chapter",
-    "8": "Technical Report / Survey  Article"
-  },
-  "footer": {
-    "copyright": "Copyright © 2025 SMIL. All rights reserved.",
-    "address": "Room 206, Applied Science Building, No.88, Sec. 4, Ting Zhou Rd., Wenshan Dist., Taipei City 116, Taiwan",
-    "phone": "(02) 7734-6676 ext. 1234",
-    "fax": "(02) 2932-2378",
-    "email": "smil@ntnu.edu.tw",
-    "github": "https://github.com/smil",
-    "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
+    "8": "Technical Report / Survey  Article",
+    "9": "Important",
+    "10": "Daily",
+    "11": "Award",
+    "12": "Other"
   },
   "login": "Login",
   "logout": "Logout",

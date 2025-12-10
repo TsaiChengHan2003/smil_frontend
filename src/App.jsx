@@ -8,6 +8,7 @@ import { useLoading } from './hooks/useLoading'
 import About from './pages/about'
 import Member from './pages/member'
 import News from './pages/news'
+import NewsDetail from './pages/newsDetail'
 import Research from './pages/research'
 import ResearchDetail from './pages/researchDetail'
 import Life from './pages/life'
@@ -18,7 +19,9 @@ export default function App() {
 
   useEffect(() => {
     setLoading(true);
-    localStorage.setItem('user', 'anonymous');
+    // localStorage.setItem('user', 'anonymous');
+    localStorage.setItem('user', 'manager');
+
 
     setTimeout(() => {
       setLoading(false);
@@ -34,6 +37,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/members" element={<Member />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
           <Route path="/research" element={<Research />} />
           <Route path="/research/:url" element={<ResearchDetail />} />
           <Route path="/life" element={<Life />} />

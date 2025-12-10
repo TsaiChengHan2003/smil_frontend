@@ -1,0 +1,288 @@
+// news.module.scss
+@use 'sass:map';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.pageTitle {
+  color: #526480;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.pageDescription {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+}
+
+/* =========================================
+   區塊共用樣式
+   ========================================= */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #334155;
+  margin: 3rem 0 1rem; // 底部留空間給 Header
+  padding-left: 1rem;
+  border-left: 4px solid #4e6fae;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+// ★ 定義兩種列表的 Grid 比例 (這就是您提到的 Sense)
+// 會議：截稿日(130px) | 名稱(1fr) | 地點(1.5fr) | 舉辦日(200px)
+$conf-grid: 130px 1fr 1.5fr 200px;
+
+// 公告：日期(110px) | 標籤(160px，給長標籤空間) | 內容(1fr) | 發佈人(100px)
+$news-grid: 110px 160px 1fr 100px;
+
+/* --- 列表容器與標題列 --- */
+.listContainer {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.listHeader {
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 1.5rem;
+  
+  // 標題文字樣式
+  span {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  // 依照父層 class 切換 Grid
+  &.conf {
+    display: grid;
+    grid-template-columns: $conf-grid;
+    gap: 1.5rem;
+  }
+
+  &.news {
+    display: grid;
+    grid-template-columns: $news-grid;
+    gap: 1.5rem;
+  }
+
+  // 手機版隱藏標題列 (改用卡片式呈現)
+  @media (max-width: 992px) {
+    display: none !important; 
+  }
+}
+
+/* =========================================
+   1. 會議投稿公告 (Rows)
+   ========================================= */
+.confRow {
+  display: grid;
+  grid-template-columns: $conf-grid; // 引用上面定義的比例
+  align-items: center; // 垂直置中
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  gap: 1.5rem;
+  transition: background 0.2s;
+
+  &:last-child { border-bottom: none; }
+  &:hover { background: #f8fafc; }
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1.5rem;
+  }
+}
+
+// 1. 截稿日 (強調)
+.confDeadline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  
+  .deadlineDate {
+    font-family: monospace; // 等寬字體讓數字對齊
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ef4444;
+  }
+}
+
+// 2. 會議名稱
+.confTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+// 3. 地點
+.confLocation {
+  color: #64748b;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.4;
+  
+  svg {
+    color: #94a3b8;
+    flex-shrink: 0; // 防止 icon 被擠壓
+  }
+}
+
+// 4. 舉辦日期
+.confDate {
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right; // 靠右對齊比較整齊
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+
+  svg { color: #94a3b8; }
+
+  @media (max-width: 992px) {
+    justify-content: flex-start; // 手機版改靠左
+    width: 100%;
+    padding-top: 0.8rem;
+    border-top: 1px dashed #e2e8f0;
+  }
+}
+
+/* =========================================
+   2. 一般公告 (Rows)
+   ========================================= */
+.newsRow {
+  display: grid;
+  grid-template-columns: $news-grid; // 引用上面定義的比例
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  gap: 1.5rem;
+  transition: background 0.2s;
+
+  &:last-child { border-bottom: none; }
+  &:hover { background: #f8fafc; }
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1.5rem;
+  }
+}
+
+// 1. 日期
+.newsDate {
+  font-family: monospace;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+// 2. Tag 區塊 (關鍵修正：確保不跑版)
+.newsTag {
+  display: flex;
+  justify-content: center; // 標籤置中
+  // width: 100%; // 透過 grid 控制寬度，這裡不需要強制寬度
+  
+  @media (max-width: 992px) {
+    justify-content: flex-start;
+  }
+}
+
+// 3. 內容
+.newsContent {
+  font-size: 1rem;
+  color: #334155;
+  font-weight: 500;
+  line-height: 1.5;
+  // 讓長文字省略... (可選)
+  // white-space: nowrap; 
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+}
+
+// 4. 發佈人
+.newsPublisher {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  text-align: center;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 4px;
+  
+  @media (max-width: 992px) {
+    align-self: flex-start; // 手機版靠左
+  }
+}
+
+// 手機版標籤 (Mobile Label)
+// 用來在手機版顯示 "截止日:" "地點:" 等提示字
+.mobileLabel {
+  display: none;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  
+  @media (max-width: 992px) {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+
+/* news.module.scss 補充 */
+
+.linkText {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+  
+  &:hover {
+    color: #4e6fae;
+    text-decoration: underline;
+  }
+}
+
+.newsActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconBtn {
+  color: #94a3b8;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  
+  &:hover {
+    background-color: #eff6ff;
+    color: #3b82f6;
+  }
+}

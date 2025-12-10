@@ -244,6 +244,25 @@
     "master": "碩士",
     "alumni": "校友"
   },
+  "news": {
+    "title": "最新消息與公告",
+    "description": "掌握實驗室最新動態、會議時程與內部事務。",
+    "sections": {
+      "conference": "會議投稿公告",
+      "general": "一般公告",
+      "internal": "內部 Meeting (實驗室成員限定)"
+    },
+    "table": {
+      "deadline": "截稿日期",
+      "conference": "會議名稱",
+      "location": "地點",
+      "conf_date": "舉辦日期",
+      "publish_date": "發佈日期",
+      "category": "分類",
+      "subject": "標題 / 內容",
+      "publisher": "發佈人"
+    }
+  },
   "life": {
     "title": "實驗室生活 (Lab Life)",
     "description": "記錄我們在學術研究之外的點點滴滴，包含研討會、聚餐與慶生活動。"
@@ -256,6 +275,24 @@
       "search_placeholder": "搜尋論文標題、作者或關鍵字..."
     }
   },
+  "footer": {
+    "copyright": "Copyright © 2025 SMIL. All rights reserved.",
+    "address": "116臺北市文山區汀州路四段88號 應用科學大樓206室",
+    "phone": "(02)7734-6676 分機 1234",
+    "fax": "(02)2932-2378",
+    "email": "smil@ntnu.edu.tw",
+    "github": "https://github.com/smil",
+    "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
+  },
+  "meeting": {
+      "date": "報告日期",
+      "presenter": "報告者",
+      "paper": "論文連結/檔案",
+      "slides": "簡報檔案",
+      "upload_paper": "上傳論文",
+      "upload_slides": "上傳簡報",
+      "url_placeholder": "輸入論文 URL..."
+  },
   "tags": {
     "0": "一般標籤",
     "1": "校友",
@@ -265,16 +302,11 @@
     "5": "獲獎",
     "6": "國內研討會",
     "7": "專書章節",
-    "8": "技術報告 / 綜述文章"
-  },
-  "footer": {
-    "copyright": "Copyright © 2025 SMIL. All rights reserved.",
-    "address": "116臺北市文山區汀州路四段88號 應用科學大樓206室",
-    "phone": "(02)7734-6676 分機 1234",
-    "fax": "(02)2932-2378",
-    "email": "smil@ntnu.edu.tw",
-    "github": "https://github.com/smil",
-    "professorWebsite": "https://www.smil.ntnu.edu.tw/professor"
+    "8": "技術報告 / 綜述文章",
+    "9": "重要",
+    "10": "日常",
+    "11": "獲獎",
+    "12": "其他"
   },
   "login": "登入",
   "logout": "登出",

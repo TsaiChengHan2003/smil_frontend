@@ -39,7 +39,7 @@ export function GoogleAuthProvider({ children }) {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("googleUser");
+    localStorage.removeItem("user");
     localStorage.removeItem("login");
     localStorage.removeItem("token"); // 清除後端 token
     

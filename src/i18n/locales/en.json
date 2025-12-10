@@ -43,7 +43,7 @@
             "url": "/research/lvcsr",
             "content": "Developing high-performance decoders and acoustic models tailored for natural speech with large vocabularies, addressing challenges such as co-articulation, tone variation, and noise interference.",
             "application": "Smart voice assistants, automated meeting transcription, real-time captioning.",
-            "imageUrl": "/images/research/lvcsr.jpg"
+            "imageUrl": "/images/research/lvcsr.png"
           },
           {
             "label": "Keyword Spotting and Word Recognition",
@@ -51,7 +51,7 @@
             "url": "/research/keyword-spotting",
             "content": "Accurately detecting specific wake-words or key commands in continuous speech streams, emphasizing low-latency and noise-robust model designs.",
             "application": "Wake-word detection, voice command control.",
-            "imageUrl": "/images/research/kws.jpg"
+            "imageUrl": "/images/research/keyword-spotting.png"
           },
           {
             "label": "Discriminative Acoustic Feature Extraction",
@@ -59,7 +59,7 @@
             "url": "/research/feature-extraction",
             "content": "Utilizing deep neural networks to extract highly discriminative speech feature vectors to improve backend model recognition rates in complex environments.",
             "application": "Robust speech recognition front-end processing.",
-            "imageUrl": "/images/research/feature.jpg"
+            "imageUrl": "/images/research/feature-extraction.png"
           },
           {
             "label": "Supervised/Unsupervised Acoustic and Language Modeling",
@@ -67,7 +67,7 @@
             "url": "/research/acoustic-language-modeling",
             "content": "Exploring supervised and unsupervised learning methods to optimize acoustic models for sound modeling and language models for semantic prediction.",
             "application": "Low-resource language recognition, domain-adaptive model training.",
-            "imageUrl": "/images/research/alm.jpg"
+            "imageUrl": "/images/research/acoustic-language-modeling.png"
           },
           {
             "label": "Contextual Biasing",
@@ -75,7 +75,7 @@
             "url": "/research/contextual-biasing",
             "content": "Dynamically adjusting recognition weights using dialogue contexts or external knowledge bases to improve accuracy for domain-specific terminology or proper names.",
             "application": "Personalized contact recognition, professional domain voice input.",
-            "imageUrl": "/images/research/biasing.jpg"
+            "imageUrl": "/images/research/contextual-biasing.png"
           },
           {
             "label": "Utterance Verification and Confidence Measure",
@@ -83,7 +83,7 @@
             "url": "/research/utterance-verification",
             "content": "Assessing the reliability of speech recognition results and filtering out non-target speech or background noise to ensure system response accuracy.",
             "application": "Dialogue system error rejection mechanisms, Computer-Assisted Language Learning (CALL).",
-            "imageUrl": "/images/research/confidence.jpg"
+            "imageUrl": "/images/research/utterance-verification.png"
           },
           {
             "label": "Speaker Adaptation",
@@ -91,15 +91,15 @@
             "url": "/research/speaker-adaptation",
             "content": "Fine-tuning general models with small amounts of speaker data to quickly adapt to specific user accents and speaking characteristics.",
             "application": "Personalized voice assistants.",
-            "imageUrl": "/images/research/adaptation.jpg"
+            "imageUrl": "/images/research/speaker-adaptation.png"
           },
           {
             "label": "Spoken Dialogue Systems",
             "en_label": "Spoken Dialogue Systems",
-            "url": "/research/dialogue-systems",
+            "url": "/research/spoken-dialogue-systems",
             "content": "Integrating speech recognition, semantic understanding, and dialogue management to achieve fluent and goal-oriented human-machine interaction.",
             "application": "Smart customer service bots, in-car voice systems.",
-            "imageUrl": "/images/research/sds.jpg"
+            "imageUrl": "/images/research/spoken-dialogue-systems.png"
           },
           {
             "label": "Automated Speaking / Pronunciation Assessment",
@@ -107,7 +107,7 @@
             "url": "/research/speaking-assessment",
             "content": "Applying speech signal processing techniques to automatically evaluate and diagnose pronunciation accuracy, fluency, and prosody.",
             "application": "Computer-Assisted Language Learning (CALL), automated speaking proficiency tests.",
-            "imageUrl": "/images/research/assessment.jpg"
+            "imageUrl": "/images/research/speaking-assessment.png"
           }
         ]
       },
@@ -122,7 +122,7 @@
             "url": "/research/retrieval-modeling",
             "content": "Researching probabilistic and vector space models, enhancing retrieval relevance through query expansion and rewriting techniques.",
             "application": "Search engine optimization (SEO), intelligent QA systems.",
-            "imageUrl": "/images/research/ir-model.jpg"
+            "imageUrl": "/images/research/ir -model.jpg"
           },
           {
             "label": "Document Representation and Robust Audio Indexing",

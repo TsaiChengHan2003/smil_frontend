@@ -42,7 +42,7 @@
             "url": "/research/lvcsr",
             "content": "針對自然口語中詞彙量龐大且連續發音的特性，開發高效能的解碼器與聲學模型，解決連音、變調及噪音干擾問題。",
             "application": "智慧語音助理、自動會議記錄、即時字幕生成。",
-            "imageUrl": "/images/research/lvcsr.jpg"
+            "imageUrl": "/images/research/lvcsr.png"
           },
           {
             "label": "關鍵詞檢測與語詞辨識",
@@ -50,7 +50,7 @@
             "url": "/research/keyword-spotting",
             "content": "在連續語音流中精準偵測特定喚醒詞或關鍵指令，強調低延遲與高抗噪能力的模型設計。",
             "application": "裝置語音喚醒 (Wake-word detection)、語音指令控制。",
-            "imageUrl": "/images/research/kws.jpg"
+            "imageUrl": "/images/research/keyword-spotting.png"
           },
           {
             "label": "鑑別式聲學特徵擷取",
@@ -58,7 +58,7 @@
             "url": "/research/feature-extraction",
             "content": "利用深度神經網路提取具備高區辨力的語音特徵向量，以提升後端模型在複雜環境下的辨識率。",
             "application": "強健性語音辨識前端處理。",
-            "imageUrl": "/images/research/feature.jpg"
+            "imageUrl": "/images/research/feature-extraction.png"
           },
           {
             "label": "聲學與語言模型技術",
@@ -66,7 +66,7 @@
             "url": "/research/acoustic-language-modeling",
             "content": "探討監督式與非監督式學習方法，優化聲學模型對聲音的建模能力以及語言模型對語意的預測能力。",
             "application": "低資源語言辨識、領域適應性模型訓練。",
-            "imageUrl": "/images/research/alm.jpg"
+            "imageUrl": "/images/research/acoustic-language-modeling.png"
           },
           {
             "label": "情境感知偏置與校正",
@@ -74,7 +74,7 @@
             "url": "/research/contextual-biasing",
             "content": "利用對話情境或外部知識庫資訊，動態調整辨識權重，提升特定領域術語或人名的辨識準確度。",
             "application": "個人化聯絡人辨識、特定專業領域語音輸入。",
-            "imageUrl": "/images/research/biasing.jpg"
+            "imageUrl": "/images/research/contextual-biasing.png"
           },
           {
             "label": "語句確認與信心度估測",
@@ -82,7 +82,7 @@
             "url": "/research/utterance-verification",
             "content": "評估語音辨識結果的可靠程度，並過濾非目標語音或背景雜訊，確保系統回應的正確性。",
             "application": "對話系統錯誤拒絕機制、電腦輔助語言學習。",
-            "imageUrl": "/images/research/confidence.jpg"
+            "imageUrl": "/images/research/utterance-verification.png"
           },
           {
             "label": "語者調適技術",
@@ -90,15 +90,15 @@
             "url": "/research/speaker-adaptation",
             "content": "利用少量語者資料微調通用模型，使其能快速適應特定使用者的口音與發話特徵。",
             "application": "個人化語音助理。",
-            "imageUrl": "/images/research/adaptation.jpg"
+            "imageUrl": "/images/research/speaker-adaptation.png"
           },
           {
             "label": "口語對話系統",
             "en_label": "Spoken Dialogue Systems",
-            "url": "/research/dialogue-systems",
+            "url": "/research/spoken-dialogue-systems",
             "content": "整合語音辨識、語意理解與對話管理，實現人機之間流暢且具目標導向的口語互動。",
             "application": "智慧客服機器人、車載語音系統。",
-            "imageUrl": "/images/research/sds.jpg"
+            "imageUrl": "/images/research/spoken-dialogue-systems.png"
           },
           {
             "label": "自動化口語與發音評測",
@@ -106,7 +106,7 @@
             "url": "/research/speaking-assessment",
             "content": "運用語音訊號處理技術，針對發音準確度、流暢度及韻律進行自動化評分與錯誤診斷。",
             "application": "電腦輔助語言學習 (CALL)、英語口說檢定自動評分。",
-            "imageUrl": "/images/research/assessment.jpg"
+            "imageUrl": "/images/research/speaking-assessment.png"
           }
         ]
       },

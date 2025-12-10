@@ -12,7 +12,7 @@ i18n
       en: { translation: en },
       zh: { translation: zh },
     },
-    fallbackLng: 'en', // 偵測不到時預設英文
+    lng: 'en',
     interpolation: { escapeValue: false },
   })
 

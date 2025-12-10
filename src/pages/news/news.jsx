@@ -40,7 +40,7 @@ export default function News() {
               <span>{t("news.table.conference")}</span>
               <span>{t("news.table.location")}</span>
               <span style={{textAlign: 'right'}}>{t("news.table.conf_date")}</span>
-              {isLoggedIn && <span style={{textAlign: 'center'}}>Action</span>}
+              {isLoggedIn && <span style={{textAlign: 'center'}}>{t("news.table.action")}</span>}
             </div>
 
             {mockConferences.map(conf => (

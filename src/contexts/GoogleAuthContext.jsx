@@ -1,12 +1,13 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const GoogleAuthContext = createContext(null);
 
 export function GoogleAuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(true); // @TODO: 等到登入串好之後、改成 false
-
+  const navigate = useNavigate();
   useEffect(() => {
     // 檢查是否有儲存的登入狀態
     const savedUser = localStorage.getItem("googleUser");
@@ -45,8 +46,8 @@ export function GoogleAuthProvider({ children }) {
     
     setUser(null);
     setIsLoggedIn(false);
-    
     toast.success("已登出");
+    navigate("/", {replace: true});
   };
 
   // 簡易 JWT 解析（不驗證簽名）

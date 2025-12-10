@@ -5,7 +5,8 @@
     { "title": "News", "url": "/news"},
     { "title": "Research","url": "/research"},
     { "title": "Life", "url": "/life"},
-    { "title": "Achievements","url": "/achievements" }
+    { "title": "Achievements","url": "/achievements" },
+    { "title": "Internal","url": "/internal", "authRequired": true }
   ],
   "about": {
     "introTitle": "About SMIL",
@@ -276,6 +277,26 @@
       "all": "All Years",
       "search_placeholder": "Search title, author or keyword..."
     }
+  },
+  "internal": {
+    "title": "Internal Area",
+    "description": "Manage weekly meeting duties, upload files, and view archives.",
+    "duty_title": "This Week's Duty",
+    "notice_title": "Weekly Meeting Notice",
+    "history_title": "Meeting History",
+    "table": {
+      "date": "Date",
+      "presenter": "Presenter",
+      "detail": "Detail",
+      "paper": "Paper / Link",
+      "slides": "Slides",
+      "actions": "Actions"
+    },
+    "upload_placeholder": "Enter Paper URL...",
+    "file_placeholder": "Select File",
+    "upload_btn": "Upload",
+    "view_btn": "View",
+    "no_data": "No Data"
   },
   "footer": {
     "copyright": "Copyright © 2025 SMIL. All rights reserved.",

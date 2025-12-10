@@ -5,7 +5,8 @@
     { "title": "重要公告", "url": "/news"},
     { "title": "相關研究", "url": "/research"},
     { "title": "生活集錦", "url": "/life"},
-    { "title": "研究成果", "url": "/achievements" }
+    { "title": "研究成果", "url": "/achievements" },
+    { "title": "內部專區", "url": "/internal", "authRequired": true }
   ],
   "about": {
     "introTitle": "關於 SMIL",
@@ -275,6 +276,22 @@
       "all": "全部年份",
       "search_placeholder": "搜尋論文標題、作者或關鍵字..."
     }
+  },
+  "internal": {
+    "title": "內部專區",
+    "description": "管理每週 Meeting 輪值、上傳報告檔案與瀏覽歷史紀錄。",
+    "notice_title": "本週會議公告", 
+    "duty_title": "本週輪值報告 (This Week)",
+    "history_title": "歷史報告紀錄 (History)",
+    "table": {
+      "date": "日期",
+      "presenter": "報告者",
+      "detail": "詳細資訊",
+      "paper": "論文連結 / 題目",
+      "slides": "簡報檔案" 
+    },
+    "upload_placeholder": "貼上論文 URL...",
+    "file_placeholder": "選擇檔案"
   },
   "footer": {
     "copyright": "Copyright © 2025 SMIL. All rights reserved.",

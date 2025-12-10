@@ -68,11 +68,13 @@ export function Header() {
         <nav className={`menu ${isMenuOpen ? 'is-active' : ''}`} aria-label="Main Navigation">
           <ul className="list-unstyled d-flex gap-2 m-0 nav-list">
             {Array.isArray(header) && header.map((item) => (
-              <li key={item.title} className="menu-item">
-                <NavLink to={item.url || '#'} className="menu-link text-decoration-none" end>
-                  {item.title}
-                </NavLink>
-              </li>
+              item.authRequired && !isLoggedIn ? null : (
+                <li key={item.title} className="menu-item">
+                  <NavLink to={item.url || '#'} className="menu-link text-decoration-none" end>
+                    {item.title}
+                  </NavLink>
+                </li>
+              )
             ))}
             
             {/* 分隔線 (手機版可選) */}

@@ -7,13 +7,14 @@ import Index from '@/pages/index'
 import { useLoading } from './hooks/useLoading'
 import About from './pages/about'
 import Member from './pages/member'
-import News from './pages/news'
-import NewsDetail from './pages/newsDetail'
-import ConferenceDetail from './pages/newsConferenceDetail'
-import Research from './pages/research'
-import ResearchDetail from './pages/researchDetail'
+import News from './pages/news/news'
+import NewsDetail from './pages/news/newsDetail'
+import ConferenceDetail from './pages/news/newsConferenceDetail'
+import Research from './pages/research/research'
+import ResearchDetail from './pages/research/researchDetail'
 import Life from './pages/life'
 import Achievements from './pages/achievements'
+import Internal from './pages/internal'
 
 export default function App() {
   const {setLoading} = useLoading();
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/research/:url" element={<ResearchDetail />} />
           <Route path="/life" element={<Life />} />
           <Route path="/achievements" element={<Achievements />} />
+          <Route path="/internal" element={<Internal />} />
         </Routes>
       </main>
       <Footer />

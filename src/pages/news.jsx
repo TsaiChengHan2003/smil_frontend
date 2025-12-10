@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Fragment from "@/components/common/Fragment";
-import Tags from "@/components/tags"; // ★ 修正 import 路徑
+import Tags from "@/components/tags"; 
 import { useTranslation } from "react-i18next";
-import { Monitor, Edit, Calendar, MapPin } from "react-feather";
+import { Monitor, Edit, Calendar, MapPin, Plus } from "react-feather";
 import { Link } from "react-router-dom";
 import styles from "@/assets/styles/components/news.module.scss";
 import { newsData, mockConferences } from "@/datas/news";
@@ -10,7 +10,7 @@ import { useGoogleAuth } from "@/contexts/GoogleAuthContext";
 
 export default function News() {
   const { t } = useTranslation();
-  const { isLoggedIn } = useGoogleAuth()
+  const { isLoggedIn } = useGoogleAuth();
 
   return (
     <Fragment>
@@ -18,22 +18,37 @@ export default function News() {
         <h1 className={styles.pageTitle}>{t("news.title")}</h1>
         <p className={styles.pageDescription}>{t("news.description")}</p>
 
+        {/* =========================================
+            1. 會議投稿公告 (Conference)
+           ========================================= */}
         <section>
-          <div className={styles.sectionTitle}>
-            <Calendar size={24} /> {t("news.sections.conference")}
+          <div className={styles.sectionHeader}>
+            <div className={styles.sectionTitle}>
+              <Calendar size={24} /> {t("news.sections.conference")}
+            </div>
+            {/* 只有登入者看得到新增按鈕 */}
+            {isLoggedIn && (
+              <Link to="/news/conference/new" className={styles.addBtn}>
+                <Plus size={16} /> 新增會議
+              </Link>
+            )}
           </div>
           
           <div className={styles.listContainer}>
             {/* 標題列 */}
-            <div className={`${styles.listHeader} ${styles.conf}`}>
+            <div 
+              className={`${styles.listHeader} ${styles.conf}`}
+              style={isLoggedIn ? { gridTemplateColumns: "130px 1fr 1.5fr 160px 80px" } : {}}
+            >
               <span>{t("news.table.deadline")}</span>
               <span>{t("news.table.conference")}</span>
               <span>{t("news.table.location")}</span>
               <span style={{textAlign: 'right'}}>{t("news.table.conf_date")}</span>
+              {isLoggedIn && <span style={{textAlign: 'center'}}>Action</span>}
             </div>
 
             {mockConferences.map(conf => (
-              <div key={conf.id} className={styles.confRow}>
+              <div key={conf.id} className={styles.confRow} style={isLoggedIn ? { gridTemplateColumns: "130px 1fr 1.5fr 160px 80px" } : {}}>
                 {/* 截稿日 */}
                 <div className={styles.confDeadline}>
                   <span className={styles.mobileLabel}>{t("news.table.deadline")}:</span>
@@ -42,7 +57,10 @@ export default function News() {
 
                 {/* 會議名稱 */}
                 <div className={styles.confTitle}>
-                  {conf.title}
+                  {/* 點擊標題進入詳情頁 */}
+                  <Link to={`/news/conference/${conf.id}`} className={styles.linkText}>
+                    {conf.title}
+                  </Link>
                 </div>
 
                 {/* 地點 */}
@@ -57,19 +75,38 @@ export default function News() {
                   <Calendar size={16} />
                   {conf.date}
                 </div>
+
+                {/* 編輯按鈕 (權限控制) */}
+                {isLoggedIn && (
+                  <div className={styles.newsActions}>
+                    <Link to={`/news/conference/${conf.id}?edit=true`} className={styles.iconBtn}>
+                      <Edit size={18} />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </section>
 
-        {/* 2. 普通公告 */}
+        {/* =========================================
+            2. 普通公告 (General News)
+           ========================================= */}
         <section>
-          <div className={styles.sectionTitle}>
-            <Monitor size={24} /> {t("news.sections.general")}
+          <div className={styles.sectionHeader}>
+            <div className={styles.sectionTitle}>
+              <Monitor size={24} /> {t("news.sections.general")}
+            </div>
+            {/* 只有登入者看得到新增按鈕 */}
+            {isLoggedIn && (
+              <Link to="/news/new" className={styles.addBtn}>
+                <Plus size={16} /> 新增公告
+              </Link>
+            )}
           </div>
           
           <div className={styles.listContainer}>
-            {/* 標題列：如果有權限，動態加入 Action 欄位 style */}
+            {/* 標題列 */}
             <div 
               className={`${styles.listHeader} ${styles.news}`}
               style={isLoggedIn ? { gridTemplateColumns: "110px 160px 1fr 100px 80px" } : {}}
@@ -82,22 +119,17 @@ export default function News() {
             </div>
 
             {newsData.map(news => (
-              <div 
-                key={news.id} 
-                className={styles.newsRow}
-                style={isLoggedIn ? { gridTemplateColumns: "110px 160px 1fr 100px 80px" } : {}}
-              >
+              <div key={news.id} className={styles.newsRow} style={isLoggedIn ? { gridTemplateColumns: "110px 160px 1fr 100px 80px" } : {}}>
                 <div className={styles.newsDate}>
                   <span className={styles.mobileLabel}>{t("news.table.publish_date")}:</span>
                   {news.createDate}
                 </div>
                 
                 <div className={styles.newsTag}>
-                  {/* 使用正確路徑的 Tags 組件 */}
                   <Tags tags={news.tag} />
                 </div>
                 
-                {/* 標題：點擊進入詳情頁 (View Mode) */}
+                {/* 標題：點擊進入詳情頁 */}
                 <div className={styles.newsContent}>
                   <Link to={`/news/${news.id}`} className={styles.linkText}>
                     {news.title}
@@ -109,7 +141,7 @@ export default function News() {
                   {news.publisher}
                 </div>
 
-                {/* 編輯按鈕：只有管理員看得到 */}
+                {/* 編輯按鈕 (權限控制) */}
                 {isLoggedIn && (
                   <div className={styles.newsActions}>
                     <Link to={`/news/${news.id}?edit=true`} className={styles.iconBtn} title="Edit">
@@ -121,6 +153,7 @@ export default function News() {
             ))}
           </div>
         </section>
+
       </div>
     </Fragment>
   );

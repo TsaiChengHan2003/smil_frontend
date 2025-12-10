@@ -155,7 +155,7 @@ $news-grid: 110px 160px 1fr 100px;
 // 4. 舉辦日期
 .confDate {
   color: #475569;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-align: right; // 靠右對齊比較整齊
   display: flex;
@@ -284,5 +284,30 @@ $news-grid: 110px 160px 1fr 100px;
   &:hover {
     background-color: #eff6ff;
     color: #3b82f6;
+  }
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 1rem;
+}
+
+.addBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4e6fae;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+  
+  &:hover {
+    background-color: #3b5486;
   }
 }

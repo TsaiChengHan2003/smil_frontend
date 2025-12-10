@@ -260,7 +260,8 @@
       "publish_date": "發佈日期",
       "category": "分類",
       "subject": "標題 / 內容",
-      "publisher": "發佈人"
+      "publisher": "發佈人",
+      "action": "操作"
     }
   },
   "life": {

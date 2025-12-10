@@ -13,41 +13,47 @@ export const mockConferences = [
     title: "PAKDD 2026", 
     location: "Hong Kong, China", 
     deadline: "2025-11-25", 
-    date: "2026-06-09 ~ 12" 
+    date: "2026-06-09 ~ 06-12",
+    url: "https://pakdd2026.org" // 新增
   },
   { 
     id: 2, 
     title: "ICME 2026", 
     location: "Bangkok, Thailand", 
     deadline: "2025-12-12", 
-    date: "2026-07-06 ~ 10" 
+    date: "2026-07-06 ~ 07-10",
+    url: "https://2026.ieeeicme.org" // 新增
   },
   { 
     id: 3, 
     title: "ACL 2026", 
     location: "San Diego, USA", 
     deadline: "2026-01-05", 
-    date: "2026-07-02 ~ 07" 
+    date: "2026-07-02 ~ 07-07",
+    url: "https://2026.aclweb.org" // 新增
   },
   { 
     id: 4, 
     title: "IJCNN 2026", 
     location: "Maastricht, Netherlands", 
     deadline: "2026-01-31", 
-    date: "2026-06-21 ~ 26" 
+    date: "2026-06-21 ~ 06-26",
+    url: "https://ijcnn.org" // 新增
   },
   { 
     id: 5, 
     title: "EUSIPCO 2026", 
     location: "Bruges, Belgium", 
     deadline: "2026-02-06", 
-    date: "2026-08-31 ~ 09-04" 
+    date: "2026-08-31 ~ 09-04",
+    url: "https://eusipco2026.org" // 新增
   },
   { 
     id: 6, 
     title: "Interspeech 2026", 
     location: "Sydney, Australia", 
     deadline: "2026-02-25", 
-    date: "2026-09-28 ~ 10-01" 
+    date: "2026-09-28 ~ 10-01",
+    url: "https://interspeech2026.org" // 新增
   },
 ];

@@ -1,0 +1,333 @@
+@use '../tokens' as *;
+
+.userDropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.userName {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+  
+  .userButton:hover & {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 160px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  overflow: hidden;
+  animation: slideDown 0.2s ease-out;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: linear-gradient(135deg, #15294e 0%, #3d5a8f 100%);
+  border-bottom: 2px solid $main-color-hover;
+  
+  .userNameLarge {
+    color: $color-bg;
+  }
+  
+  .userEmail {
+    color: $color-bg;
+  }
+}
+
+.avatarLarge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.userDetails {
+  flex: 1;
+  min-width: 0;
+}
+
+.userNameLarge {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.userEmail {
+  margin: 4px 0 0 0;
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+  margin: 8px 0;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+
+  // 編輯個人資訊 - 藍色系
+  &:first-of-type {
+    color: #2563eb;
+    
+    svg {
+      color: #2563eb;
+    }
+    
+    &:hover {
+      background: #eff6ff;
+      color: #1d4ed8;
+      
+      svg {
+        color: #1d4ed8;
+      }
+    }
+    
+    &:active {
+      background: #dbeafe;
+    }
+  }
+
+  // 登出 - 紅色系
+  &:last-of-type {
+    color: #dc2626;
+    
+    svg {
+      color: #dc2626;
+    }
+    
+    &:hover {
+      background: #fef2f2;
+      color: #b91c1c;
+      
+      svg {
+        color: #b91c1c;
+      }
+    }
+    
+    &:active {
+      background: #fee2e2;
+    }
+  }
+}
+
+// 手機版樣式 - 直接展開顯示
+.userDropdownMobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.userInfoMobile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.avatarMobile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.userDetailsMobile {
+  flex: 1;
+  min-width: 0;
+}
+
+.userNameMobile {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.userEmailMobile {
+  margin: 4px 0 0 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dividerMobile {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 8px 0;
+}
+
+.menuItemMobile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 15px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin-top: 4px;
+
+  svg {
+    color: #ffffff;
+    opacity: 0.9;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &:active {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  // 編輯個人資訊
+  &:first-of-type {
+    svg {
+      color: #60a5fa;
+    }
+    
+    &:hover {
+      background: rgba(96, 165, 250, 0.2);
+    }
+  }
+
+  // 登出
+  &:last-of-type {
+    svg {
+      color: #f87171;
+    }
+    
+    &:hover {
+      background: rgba(248, 113, 113, 0.2);
+    }
+  }
+}
+
+// 桌面版手機版調整
+@media (max-width: 991px) {
+  .userDropdown {
+    display: none; // 隱藏桌面版下拉選單
+  }
+
+  .userButton {
+    padding: 4px 8px;
+    
+    .userName {
+      display: none;
+    }
+  }
+
+  .dropdownMenu {
+    right: -10px;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .userDropdownMobile {
+    display: none; // 隱藏手機版展開樣式
+  }
+}
+

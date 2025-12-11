@@ -6,27 +6,59 @@ const GoogleAuthContext = createContext(null);
 
 export function GoogleAuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(true); // @TODO: 等到登入串好之後、改成 false
+  // 先設為 true，之後再改回 false
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const navigate = useNavigate();
+  
   useEffect(() => {
     // 檢查是否有儲存的登入狀態
     const savedUser = localStorage.getItem("googleUser");
     const savedLogin = localStorage.getItem("login");
     
     if (savedUser && savedLogin) {
-      setUser(JSON.parse(savedUser));
+      const userData = JSON.parse(savedUser);
+      setUser(userData);
       setIsLoggedIn(true);
     }
   }, []);
+
+  // 獲取用戶資料（先寫死，之後會串接 API）
+  const getUserProfile = () => {
+    // TODO: 之後串接 API 獲取用戶資料
+    // 目前先返回寫死的資料
+    if (user?.decoded) {
+      return {
+        name: "",
+        email: "",
+        picture: "",
+        phone: "0912-345-678",
+        department: "資訊工程學系",
+        position: "研究生"
+      };
+    }
+    // 如果是 Passkey 登入，返回預設資料
+    return {
+      name: "蔡政翰",
+      email: user?.email || "",
+      picture: "images/ntnu_logo.png",
+      phone: "0912-345-678",
+      department: "資訊工程學系",
+      position: "研究生"
+    };
+  };
 
   const handleGoogleResponse = (response) => {
     console.log("Google login response:", response);
     
     // 這裡可以發送 credential 到後端驗證
+    const decoded = parseJwt(response.credential);
     const userInfo = {
       credential: response.credential,
-      // 解碼 JWT 獲取用戶信息
-      decoded: parseJwt(response.credential)
+      decoded: decoded,
+      loginType: 'google',
+      email: decoded.email,
+      name: decoded.name,
+      picture: decoded.picture
     };
 
     // 儲存用戶資訊
@@ -39,8 +71,34 @@ export function GoogleAuthProvider({ children }) {
     toast.success("登入成功！");
   };
 
+  const handlePasskeyResponse = async (credential) => {
+    try {
+      // TODO: 發送 credential 到後端驗證
+      // 目前先模擬成功
+      const userInfo = {
+        loginType: 'passkey',
+        email: credential.response.userHandle ? 
+          new TextDecoder().decode(credential.response.userHandle) : "user@example.com",
+        credentialId: credential.id
+      };
+
+      // 儲存用戶資訊
+      localStorage.setItem("googleUser", JSON.stringify(userInfo));
+      localStorage.setItem("login", "true");
+      
+      setUser(userInfo);
+      setIsLoggedIn(true);
+      
+      toast.success("登入成功！");
+    } catch (error) {
+      console.error("Passkey login error:", error);
+      toast.error("登入失敗，請重試");
+    }
+  };
+
   const handleLogout = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("googleUser");
     localStorage.removeItem("login");
     localStorage.removeItem("token"); // 清除後端 token
     
@@ -72,7 +130,9 @@ export function GoogleAuthProvider({ children }) {
     user,
     isLoggedIn,
     handleGoogleResponse,
-    handleLogout
+    handlePasskeyResponse,
+    handleLogout,
+    getUserProfile
   };
 
   return (

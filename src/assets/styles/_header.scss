@@ -128,6 +128,18 @@ $mobile-breakpoint: 991px;
         height: 45px;
         margin-top: 10px;
       }
+
+      // 手機版用戶下拉選單調整
+      .userDropdown {
+        width: 100%;
+        margin-top: 10px;
+        
+        .userButton {
+          width: 100%;
+          justify-content: center;
+          height: 45px;
+        }
+      }
     }
 
     // === 共用與桌面版樣式保留 ===

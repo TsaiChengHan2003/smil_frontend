@@ -21,10 +21,6 @@ export default function App() {
 
   useEffect(() => {
     setLoading(true);
-    // localStorage.setItem('user', 'anonymous');
-    localStorage.setItem('user', 'manager');
-
-
     setTimeout(() => {
       setLoading(false);
     }, 1000);

@@ -10,7 +10,7 @@ export default function Index() {
     const fetchPhotos = async () => {
       try {
         const response = await IndexAPI.getCarouselPhotos();
-        console.log(response);
+
         setPhotos(response);
       } catch (error) {
         toast.error(error.message);

@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Globe, LogOut, Menu, X } from 'react-feather' // 新增 Menu, X
+import { Globe, Menu, X } from 'react-feather' // 新增 Menu, X
 import { GoPerson } from "react-icons/go"
 import { useGoogleAuth } from '@/contexts/GoogleAuthContext'
 import { GoogleLoginPopup } from '@/components/popup/GoogleLoginPopup'
+import { UserDropdown } from './UserDropdown'
 
 export function Header() {
   const { t, i18n } = useTranslation()
@@ -99,14 +100,7 @@ export function Header() {
             </li>
             <li className="menu-item">
               {isLoggedIn ? (
-                <button 
-                  type="button"
-                  className="menu-link login-btn" 
-                  onClick={handleLogout}
-                >
-                  <LogOut size={18} />
-                  <span className="btn-text">{t('logout')}</span>
-                </button>
+                <UserDropdown />
               ) : (
                 <button 
                   type="button"

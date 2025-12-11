@@ -21,7 +21,7 @@ export default function Index() {
 
 
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
       <Carousel images={photos} />
     </div>
   )

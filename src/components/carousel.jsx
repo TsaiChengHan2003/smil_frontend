@@ -9,25 +9,12 @@ export default function Carousel({ images = [] }) {
   // 根據螢幕寬度動態調整比例
   const [aspectRatio, setAspectRatio] = useState({ widthRatio: 21, heightRatio: 9 });
   
-  const [isMobile, setIsMobile] = useState(false);
-  const [isTablet, setIsTablet] = useState(false);
-  const [isMedium, setIsMedium] = useState(false);
-  
   useEffect(() => {
     const updateRatio = () => {
       const width = window.innerWidth;
-      setIsMobile(width < 768);
-      setIsTablet(width >= 768 && width < 1400);
-      setIsMedium(width >= 1400 && width < 1600);
-      
       if (width < 768) {
-        // 手機版：使用更窄的比例，讓高度更大
-        setAspectRatio({ widthRatio: 3, heightRatio: 4 });
-      } else if (width < 1400) {
-        // 平板/中等螢幕：使用 16:9 比例，確保填滿
         setAspectRatio({ widthRatio: 16, heightRatio: 9 });
-      } else if (width < 1600) {
-        // 1400~1600px：使用 18:9 比例
+      } else if (width < 1200) {
         setAspectRatio({ widthRatio: 18, heightRatio: 9 });
       } else {
         setAspectRatio({ widthRatio: 21, heightRatio: 9 });
@@ -65,8 +52,7 @@ export default function Carousel({ images = [] }) {
     <div className={styles.carouselContainer}>
       <AcroolCarousel
         data={slides}
-        height={isMobile || isTablet || isMedium ? "100%" : aspectRatio}
-        style={(isMobile || isTablet || isMedium) ? { height: '100%', width: '100%' } : undefined}
+        height={aspectRatio}
         isEnableAutoPlay
         autoPlayTime={3000}
         isEnableLoop

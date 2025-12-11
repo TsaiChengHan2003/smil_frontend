@@ -245,8 +245,17 @@
 @media (max-width: 768px) {
   .carouselContainer {
     border-radius: 0;
-    flex: 1;
-    min-height: 0;
+    // 手機版：使用視窗高度計算，確保填滿
+    height: calc(100vh - 64px - 60px);
+    min-height: calc(100vh - 64px - 60px);
+    max-height: calc(100vh - 64px - 60px);
+    flex: none; // 不使用 flex，改用固定高度
+    
+    // 確保輪播圖填滿容器
+    > * {
+      height: 100% !important;
+      width: 100% !important;
+    }
   }
   
   .centerContent {
@@ -276,11 +285,64 @@
     font-size: 0.85rem;
     margin-top: 1.5rem;
   }
+  
+  // 手機版圖片確保填滿
+  .slideImage {
+    object-fit: cover !important;
+    min-height: 100%;
+  }
 }
 
-// 響應式調整，確保所有螢幕都沒有留白
-@media (min-width: 769px) and (max-width: 1200px) {
+// 平板/中等螢幕調整（770~1400px），確保沒有留白
+@media (min-width: 769px) and (max-width: 1400px) {
+  .carouselContainer {
+    // 使用視窗高度計算，確保填滿
+    height: calc(100vh - 64px - 60px);
+    min-height: calc(100vh - 64px - 60px);
+    max-height: calc(100vh - 64px - 60px);
+    flex: none; // 不使用 flex，改用固定高度
+    
+    // 確保輪播圖填滿容器
+    > * {
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
+  
   .centerContent {
     margin: 0 12%;
+  }
+  
+  // 確保圖片填滿
+  .slideImage {
+    object-fit: cover !important;
+    min-height: 100%;
+  }
+}
+
+// 1400~1600px 區間調整，確保沒有留白
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .carouselContainer {
+    // 使用視窗高度計算，確保填滿
+    height: calc(100vh - 64px - 60px);
+    min-height: calc(100vh - 64px - 60px);
+    max-height: calc(100vh - 64px - 60px);
+    flex: none; // 不使用 flex，改用固定高度
+    
+    // 確保輪播圖填滿容器
+    > * {
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
+  
+  .centerContent {
+    margin: 0 15%;
+  }
+  
+  // 確保圖片填滿
+  .slideImage {
+    object-fit: cover !important;
+    min-height: 100%;
   }
 }

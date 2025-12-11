@@ -1,11 +1,12 @@
 import AcroolCarousel, { AcroolSlideCard } from '@acrool/react-carousel';
 import styles from '@styles/components/carousel.module.scss';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Carousel({ images = [] }) {
   const [nowImageIndex, setNowImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  
+  const navigate = useNavigate();
   // 根據螢幕寬度動態調整比例
   const [aspectRatio, setAspectRatio] = useState({ widthRatio: 21, heightRatio: 9 });
   const [isMobile, setIsMobile] = useState(false);
@@ -93,9 +94,11 @@ export default function Carousel({ images = [] }) {
         )}
         {currentImage.link_url && (
           <a 
-            href={currentImage.link_url} 
             className={styles.navigationButton}
             key={currentImage.link_url}
+            onClick={() => navigate(currentImage.link_url)}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span>{currentImage.description || '了解更多'}</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

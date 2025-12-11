@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename)
 export default defineConfig({
   plugins: [
     react({
-      include: /\.(js|jsx)$/, // ✅ 讓 .js 也支援 JSX
+      include: /\.(js|jsx)$/,
     }),
   ],
   resolve: {
@@ -25,4 +25,7 @@ export default defineConfig({
     },
     extensions: ['.js', '.jsx', '.json', '.scss'],
   },
+  // server: {
+  //   port: 11400
+  // }
 })

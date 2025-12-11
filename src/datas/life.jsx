@@ -7,7 +7,7 @@ export const life = [
     "carousel": [
       {
         "description": "Happy 52nd Birthday! May you find the true essence of research and joy in life.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/1-1024x768.jpg"
+        "imageUrl": "images/life/1-1024x768.jpg"
       }
     ]
   },
@@ -19,11 +19,11 @@ export const life = [
     "carousel": [
       {
         "description": "Group photo at the year-end banquet.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/4-1024x768.jpg"
+        "imageUrl": "images/life/4-1024x768.jpg"
       },
       {
         "description": "Enjoying the meal together.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/6-1024x768.jpg"
+        "imageUrl": "images/life/6-1024x768.jpg"
       }
     ]
   },
@@ -35,15 +35,15 @@ export const life = [
     "carousel": [
       {
         "description": "Sam Tsao presents his work.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/post_page/page/2012/A01_NTNUSMIL_@Y0NtsCc4S6-1685286451@_ori-1024x768.jpg"
+        "imageUrl": "images/life/A01_NTNUSMIL_@Y0NtsCc4S6-1685286451@_ori-1024x768.jpg"
       },
       {
         "description": "Chao Fu An (Left) & Sam Tsao (Right).",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_apsipa2022-1@_ori-768x1024.jpg"
+        "imageUrl": "images/life/A01_@ntnusmil_apsipa2022-1@_ori-768x1024.jpg"
       },
       {
         "description": "Sam Tsao presents his work.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/post_page/page/2012/A01_NTNUSMIL_@Y0NtsCc4S6-1685286458@_ori-768x1024.jpg"
+        "imageUrl": "images/life/A01_NTNUSMIL_@Y0NtsCc4S6-1685286458@_ori-768x1024.jpg"
       }
     ]
   },
@@ -55,19 +55,19 @@ export const life = [
     "carousel": [
       {
         "description": "Group photo for Teacher's Day.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-1@_ori-1024x768.jpg"
+        "imageUrl": "images/life/A02_@ntnusmil_20220928-1@_ori-1024x768.jpg"
       },
       {
         "description": "Presenting cards and gifts.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-2@_ori-1024x701.jpg"
+        "imageUrl": "images/life/A02_@ntnusmil_20220928-2@_ori-1024x701.jpg"
       },
       {
         "description": "Lab dinner gathering.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-3@_ori-1024x717.jpg"
+        "imageUrl": "images/life/A02_@ntnusmil_20220928-3@_ori-1024x717.jpg"
       },
       {
         "description": "Happy group photo.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A02_@ntnusmil_20220928-4@_ori-1024x735.jpg"
+        "imageUrl": "images/life/A02_@ntnusmil_20220928-4@_ori-1024x735.jpg"
       }
     ]
   },
@@ -79,7 +79,7 @@ export const life = [
     "carousel": [
       {
         "description": "Lo Tien Hong (Left) & Berlin Chen (Middle) & Lin Hsiao Yun (Right).",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_asru2019-1@_ori-1024x768.jpg"
+        "imageUrl": "images/life/A01_@ntnusmil_asru2019-1@_ori-1024x768.jpg"
       }
     ]
   },
@@ -91,7 +91,7 @@ export const life = [
     "carousel": [
       {
         "description": "Chen Ying Wen & Berlin Chen.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_interspeech2017-1@_ori-768x1024.jpg"
+        "imageUrl": "images/life/A01_@ntnusmil_interspeech2017-1@_ori-768x1024.jpg"
       }
     ]
   },
@@ -103,7 +103,7 @@ export const life = [
     "carousel": [
       {
         "description": "Lo Tien Hong presents his work.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_asru2017-1@_ori-1024x583.jpg"
+        "imageUrl": "images/life/A01_@ntnusmil_asru2017-1@_ori-1024x583.jpg"
       }
     ]
   },
@@ -115,7 +115,7 @@ export const life = [
     "carousel": [
       {
         "description": "Berlin Chen attending in place for a student.",
-        "imageUrl": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A01_@ntnusmil_icassp2015-1@_ori-1024x768.jpg"
+        "imageUrl": "images/life/A01_@ntnusmil_icassp2015-1@_ori-1024x768.jpg"
       }
     ]
   }

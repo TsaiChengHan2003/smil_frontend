@@ -9,7 +9,7 @@ export const memberJson = [
     "email_url": "berlin@csie.ntnu.edu.tw",
     "git_url": "",
     "papers_url": "https://sites.google.com/site/berlinchenatntnu",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/A00_@ntnusmil_berlinchen_profile@_ori.png"
+    "image_url": "images/members/陳柏琳.png"
   },
   {
     "name": "林湘婷 (Hsiao-Ting Lin)",
@@ -21,7 +21,7 @@ export const memberJson = [
     "email_url": "ntnuedu1822@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "images/members/Hsiao-Ting Lin.JPEG"
+    "image_url": "images/members/林湘婷.jpg"
   },
   {
     "name": "王建鈞",
@@ -33,7 +33,7 @@ export const memberJson = [
     "email_url": "jethrowang0531@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "吳映儒",
@@ -45,7 +45,7 @@ export const memberJson = [
     "email_url": "innrwu9517@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "鍾念哲",
@@ -57,7 +57,7 @@ export const memberJson = [
     "email_url": "markcocowen@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "黃俞華",
@@ -69,7 +69,7 @@ export const memberJson = [
     "email_url": "inwater0929@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "何躍陽",
@@ -81,7 +81,7 @@ export const memberJson = [
     "email_url": "shawnyang0525@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "黃冠棠",
@@ -93,7 +93,7 @@ export const memberJson = [
     "email_url": "i0905108390@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "郭智榮",
@@ -105,7 +105,7 @@ export const memberJson = [
     "email_url": "jhih.rong.guo@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "彭安慈",
@@ -117,7 +117,7 @@ export const memberJson = [
     "email_url": "anci.peng@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "孫韻婷",
@@ -129,7 +129,7 @@ export const memberJson = [
     "email_url": "melodysun90@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "卓妏育",
@@ -141,7 +141,7 @@ export const memberJson = [
     "email_url": "nnn7617@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "黃昱綾",
@@ -153,7 +153,7 @@ export const memberJson = [
     "email_url": "thalia890824@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "宋宏洋",
@@ -165,7 +165,7 @@ export const memberJson = [
     "email_url": "redsheep913@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "劉思廷",
@@ -177,7 +177,7 @@ export const memberJson = [
     "email_url": "613k0019c@gapps.ntnu.edu.tw",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "高麒祥",
@@ -189,7 +189,7 @@ export const memberJson = [
     "email_url": "gaochisean@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "周星瑀",
@@ -201,7 +201,7 @@ export const memberJson = [
     "email_url": "miyukinanako0702@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "曾國瑞",
@@ -213,7 +213,7 @@ export const memberJson = [
     "email_url": "60110gary@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "呂益鈞",
@@ -225,7 +225,7 @@ export const memberJson = [
     "email_url": "yichunlu707@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "蔡汯劭",
@@ -237,7 +237,7 @@ export const memberJson = [
     "email_url": "dhps40303@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "華群宇",
@@ -249,7 +249,7 @@ export const memberJson = [
     "email_url": "614k0009c@ntnu.edu.tw",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "郭秉龍",
@@ -261,7 +261,7 @@ export const memberJson = [
     "email_url": "a410570231@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "毛煒鈞",
@@ -273,7 +273,7 @@ export const memberJson = [
     "email_url": "maowju@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "蔡政翰",
@@ -285,7 +285,7 @@ export const memberJson = [
     "email_url": "wow0422796353@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "蔡秉均",
@@ -297,7 +297,7 @@ export const memberJson = [
     "email_url": "614k0034c@ntnu.edu.tw",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/default.jpg"
   },
   {
     "name": "顏必成 (Bi-Cheng Yan)",
@@ -309,7 +309,7 @@ export const memberJson = [
     "email_url": "abc29673260@gmail.com",
     "git_url": "",
     "google_scholar_url": "https://scholar.google.com.tw/citations?user=YVnxMOoAAAAJ&hl=zh-TW",
-    "image_url": "https://secure.gravatar.com/avatar/49b44e985c8cb07104e52dbc1f009f768809ff929f3419aa899f40cd1d12dbb9?s=1000&d=retro&r=g"
+    "image_url": "images/members/顏必成.jpg"
   },
   {
     "name": "曾厚強 (Ho-Chiang Tseng)",
@@ -321,7 +321,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_hctseng-1636356656@_ori.jpg"
+    "image_url": "images/members/曾厚強.jpg"
   },
   {
     "name": "林士翔 (Shih-Hsiang Lin)",
@@ -333,7 +333,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_ShihHsiang-1636356656@_ori-1000x1000.jpg"
+    "image_url": "images/members/林士翔.jpg"
   },
   {
     "name": "蔡鳳駿 (Fong-Chun Tsai)",
@@ -345,7 +345,7 @@ export const memberJson = [
     "email_url": "eoleedimin@gmail.com",
     "git_url": "https://github.com/eoleedi",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/cb272cd3d17d0d46f0d546c65802db42071f9db629d669a2af3229199df55829?s=1000&d=retro&r=g"
+    "image_url": "images/members/蔡鳳駿.jpg"
   },
   {
     "name": "盧泇良 (Vitas Lu)",
@@ -357,7 +357,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/5829cd915e9288fa1737486af94924879e2e11f03cad4c75bc048599e101cc7a?s=1000&d=retro&r=g"
+    "image_url": "images/members/盧泇良.jpg"
   },
   {
     "name": "白立亭 (Li-Ting Pai)",
@@ -369,7 +369,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/75e44873c139bf022fc662fd2cecc4fd8b73e2e47bdd1aa85b4c9662d27d6075?s=1000&d=retro&r=g"
+    "image_url": "images/members/白立亭.jpg"
   },
   {
     "name": "楊承燁 (Jerry Yang)",
@@ -381,7 +381,7 @@ export const memberJson = [
     "email_url": "yang.chan.ya@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/f1c3fab479fd0b03af23a89b1d3d6180e76a913a84df5f74d5c2e06c8835587c?s=1000&d=retro&r=g"
+    "image_url": "images/members/楊承燁.jpg"
   },
   {
     "name": "方語軒 (Yu-Hsuan Fang)",
@@ -393,7 +393,7 @@ export const memberJson = [
     "email_url": "andy03131121@gmail.com",
     "git_url": "https://github.com/ntnuYuhsuan",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/2025-證件照半身-1000x1000.jpg"
+    "image_url": "images/members/方語軒.jpg"
   },
   {
     "name": "吳姿儀 (Tzu-I Wu)",
@@ -405,7 +405,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/1b1625cae9f4b876e7978c7f1442f74a94769e3fd2298e34de6e0474a5d7de4d?s=1000&d=retro&r=g"
+    "image_url": "images/members/吳姿儀.jpg"
   },
   {
     "name": "林孟欣 (Lin Meng Shin)",
@@ -417,7 +417,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/35bcf044783f3eaf1d9f468b16917b4892a7edae755c995231b4ab5d6a1fd68b?s=1000&d=retro&r=g"
+    "image_url": "images/members/林孟欣.jpg"
   },
   {
     "name": "彭玟瑄 (Wen-Hsuan Peng)",
@@ -429,7 +429,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/3c9425700efb85f4fed99af98ff76438d17f34f03df77c580107bc33166e6519?s=1000&d=retro&r=g"
+    "image_url": "images/members/彭玟瑄.jpg"
   },
   {
     "name": "游恩倫 (En-Lun Yu)",
@@ -441,7 +441,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/af91ec70c8aac52841624848c55c53e87a2a6d281c8d816b83d4e85cedbae1cf?s=1000&d=retro&r=g"
+    "image_url": "images/members/游恩倫.jpg"
   },
   {
     "name": "楊憶婷 (Yi-Ting Yang)",
@@ -453,7 +453,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/b51d1f55a1de2aa9e172b37d37c470b36dff5ef1e459355a4f4a61aeba8380b5?s=1000&d=retro&r=g"
+    "image_url": "images/members/楊憶婷.jpg"
   },
   {
     "name": "王泓壬 (Hung-Ren Wang)",
@@ -465,7 +465,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/38296c3e78be13c8fc6fd8e0d80a63913d2d0c1fffbb268c40476aa387c16fbc?s=1000&d=retro&r=g"
+    "image_url": "images/members/王泓壬.jpg"
   },
   {
     "name": "何冠勳 (Kuan-Hsun Ho)",
@@ -477,7 +477,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/3dd2bf9daab7953b27d691d20a303d68e7fffc2e8eb5950cfc0db52f106596b4?s=1000&d=retro&r=g"
+    "image_url": "images/members/何冠勳.jpg"
   },
   {
     "name": "楊子霆 (Tzu-Ting Yang)",
@@ -489,7 +489,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/ab067d7435c95932bb4a52f86380679f17e59cfa2c438c80d0c43c215ea28769?s=1000&d=retro&r=g"
+    "image_url": "images/members/楊子霆.jpg"
   },
   {
     "name": "王詣承 (Yi-Cheng Wang)",
@@ -501,7 +501,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/c7fd056a545fccbfe96c750624ff6744a2b14c444290ee9af87d7ce4cc67bf2f?s=1000&d=retro&r=g"
+    "image_url": "images/members/王詣承.jpg"
   },
   {
     "name": "黃怡萍 (Yi-Ping Huang)",
@@ -513,7 +513,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/f44f9a4765c7cf768333f1cd022742d5854b023973c4fff4139e808b846c256c?s=1000&d=retro&r=g"
+    "image_url": "images/members/黃怡萍.jpg"
   },
   {
     "name": "蔡孟庭 (Meng-Ting Tsai)",
@@ -525,7 +525,7 @@ export const memberJson = [
     "email_url": "mengting7tw@gmail.com",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/IMG_2545-1000x1000.jpg"
+    "image_url": "images/members/蔡孟庭.jpg"
   },
   {
     "name": "王馨偉 (HsinWei Wang)",
@@ -537,7 +537,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/05e76dbf297a2030712e574605bcc336c84a846f3f35c151bff69750afdc5e34?s=1000&d=retro&r=g"
+    "image_url": "images/members/王馨偉.jpg"
   },
   {
     "name": "李佩穎 (Pei-Ying Lee)",
@@ -549,7 +549,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/da152740b561da9fbe9b7aab6929d224a101960810dfda34372027444358ecbd?s=1000&d=retro&r=g"
+    "image_url": "images/members/李佩穎.jpg"
   },
   {
     "name": "吳沁穎 (Chin-Ying Wu)",
@@ -561,7 +561,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/91b5ac583f62bcbf8794ea99776d16f484b4ad69a68afa65e3a2da12579eb5d5?s=1000&d=retro&r=g"
+    "image_url": "images/members/吳沁穎.jpg"
   },
   {
     "name": "謝宛庭 (Wan-Ting Hsieh)",
@@ -573,7 +573,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/960d452d40aa27b399707725a46871f46cdbdea93c0bf5f27100ba42ffa36d38?s=1000&d=retro&r=g"
+    "image_url": "images/members/謝宛庭.jpg"
   },
   {
     "name": "曹又升 (Yu-Sheng Tsao)",
@@ -585,7 +585,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "https://github.com/samx81",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/355253120_2987717064695889_4539046486831492946_n.jpg"
+    "image_url": "images/members/曹又升.jpg"
   },
   {
     "name": "李俊廷 (Jiun-Ting Li)",
@@ -597,7 +597,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "https://github.com/a2d8a4v/",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/個人照片1.jpg"
+    "image_url": "images/members/李俊廷.jpg"
   },
   {
     "name": "施俊良 (Chun-Liang Shih)",
@@ -609,7 +609,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/949fef0904d1d37fc2f100f82432cba32a706d9cdc9a4ad98aeb98b17e9d0e26?s=1000&d=retro&r=g"
+    "image_url": "images/members/施俊良.jpg"
   },
   {
     "name": "鄭宇森 (Yu-Sen Cheng)",
@@ -621,7 +621,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_DTDwind-1636356657@_ori.jpg"
+    "image_url": "images/members/鄭宇森.jpg"
   },
   {
     "name": "曾琬婷 (Tseng Wen Ting)",
@@ -633,7 +633,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Wendy-1636356656@_ori.jpg"
+    "image_url": "images/members/曾琬婷.jpg"
   },
   {
     "name": "范姜紹瑋 (Shao-Wei Fan Jiang)",
@@ -645,7 +645,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_fanjiang-1636356657@_ori.jpg"
+    "image_url": "images/members/范姜紹瑋.jpg"
   },
   {
     "name": "邱世弦 (Shih-Hsuan Chiu)",
@@ -657,7 +657,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_60747001S-1636356655@_ori-1000x1000.jpg"
+    "image_url": "images/members/邱世弦.jpg"
   },
   {
     "name": "趙福安 (Chao Fu An)",
@@ -669,7 +669,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "https://github.com/fuann",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_60747002S-1636356657@_ori-1000x1000.jpg"
+    "image_url": "images/members/趙福安.jpg"
   },
   {
     "name": "林筱芸 (Hsiao-Yun Lin)",
@@ -681,7 +681,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_60747009s-1636356656@_ori.jpg"
+    "image_url": "images/members/林筱芸.jpg"
   },
   {
     "name": "林韋廷 (Wei-Ting Lin)",
@@ -693,7 +693,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_tinglin-1636356656@_ori-1000x1000.jpg"
+    "image_url": "images/members/林韋廷.jpg"
   },
   {
     "name": "張修瑞 (Hsiu-Jui Chang)",
@@ -705,7 +705,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_ft8615236-1636356656@_ori-1000x1000.jpg"
+    "image_url": "images/members/張修瑞.jpg"
   },
   {
     "name": "劉慈恩 (Tzu-En Liu)",
@@ -717,7 +717,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_hane-1636356656@_ori-960x1000.jpg"
+    "image_url": "images/members/劉慈恩.jpg"
   },
   {
     "name": "趙偉成 (Wei-Cheng Chao)",
@@ -729,7 +729,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_mitbeaver-1636356657@_ori.jpg"
+    "image_url": "images/members/趙偉成.jpg"
   },
   {
     "name": "林奕儒 (Yi-Ju Lin)",
@@ -741,7 +741,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_hhvs1354-1636356657@_ori.jpg"
+    "image_url": "images/members/林奕儒.jpg"
   },
   {
     "name": "李宗勳 (Tsung-Hsun Lee)",
@@ -753,7 +753,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/16743cf7ae6633401f9e024ccee57689a64b6cdbcc6ce3b973c17b55a1eb5b94?s=1000&d=retro&r=g"
+    "image_url": "images/members/李宗勳.jpg"
   },
   {
     "name": "陳映文 (Ying-Wen Chen)",
@@ -765,7 +765,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_cliffchen123-1636356656@_ori.jpg"
+    "image_url": "images/members/陳映文.jpg"
   },
   {
     "name": "楊明璋 (Ming-Jhang Yang)",
@@ -777,7 +777,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_mjy-1636356657@_ori-1000x1000.jpg"
+    "image_url": "images/members/楊明璋.jpg"
   },
   {
     "name": "吳佳樺 (Chia-Hua Wu)",
@@ -789,7 +789,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_nemo-1636356655@_ori.jpg"
+    "image_url": "images/members/吳佳樺.jpg"
   },
   {
     "name": "羅天宏 (Tien-Hong Lo)",
@@ -801,7 +801,7 @@ export const memberJson = [
     "email_url": "teinhonglo@gmail.com",
     "git_url": "https://github.com/teinhonglo",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_teinhonglo-1636356655@_ori-1000x1000.jpg"
+    "image_url": "images/members/羅天宏.jpg"
   },
   {
     "name": "顏必成 (Bi-Cheng Yan)",
@@ -813,7 +813,7 @@ export const memberJson = [
     "email_url": "abc29673260@gmail.com",
     "git_url": "",
     "google_scholar_url": "https://scholar.google.com.tw/citations?user=YVnxMOoAAAAJ&hl=zh-TW",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_abc29673260-1636356655@_ori.jpg"
+    "image_url": "images/members/顏必成.jpg"
   },
   {
     "name": "蔡淳伊 (Chuen-Yi Tsai)",
@@ -825,7 +825,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_joy36915-1636356656@_ori.jpg"
+    "image_url": "images/members/蔡淳伊.jpg"
   },
   {
     "name": "石敬弘 (Chin-Hong Shih)",
@@ -837,7 +837,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_ntuxd0806-1636356656@_ori.jpg"
+    "image_url": "images/members/石敬弘.jpg"
   },
   {
     "name": "許曜麒 (Yao-Chi Hsu)",
@@ -849,7 +849,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_deer-1636356655@_ori.jpg"
+    "image_url": "images/members/許曜麒.jpg"
   },
   {
     "name": "楊明翰 (Ming-Han Yang)",
@@ -861,7 +861,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_yang-1636356656@_ori.jpg"
+    "image_url": "images/members/楊明翰.jpg"
   },
   {
     "name": "陳思澄 (Ssu-Cheng Chen)",
@@ -873,7 +873,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_boe20211-1636356655@_ori.jpg"
+    "image_url": "images/members/陳思澄.jpg"
   },
   {
     "name": "施凱文 (Kai-Wun Shih)",
@@ -885,7 +885,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_kevin-1636356655@_ori.jpg"
+    "image_url": "images/members/施凱文.jpg"
   },
   {
     "name": "張庭豪 (Ting-Hao Chang)",
@@ -897,7 +897,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_qoo55669-1636356657@_ori.jpg"
+    "image_url": "images/members/張庭豪.jpg"
   },
   {
     "name": "劉憶年 (Yi-Nian Liu)",
@@ -909,7 +909,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_ruby-1636356655@_ori.jpg"
+    "image_url": "images/members/劉憶年.jpg"
   },
   {
     "name": "陳黃威 (Huang-Wei Chen)",
@@ -921,7 +921,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_hwchen-1636356655@_ori-1000x1000.jpg"
+    "image_url": "images/members/陳黃威.jpg"
   },
   {
     "name": "洪孝宗 (Hsiao-Tsung Hung)",
@@ -933,7 +933,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_alex-1636356656@_ori.jpg"
+    "image_url": "images/members/洪孝宗.jpg"
   },
   {
     "name": "郝柏翰 (X X)",
@@ -945,7 +945,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_johnhao1206-1636356657@_ori.jpg"
+    "image_url": "images/members/郝柏翰.jpg"
   },
   {
     "name": "汪逸婷 (Yi-Ting Wang)",
@@ -957,7 +957,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_kame169-1636356656@_ori.jpg"
+    "image_url": "images/members/汪逸婷.jpg"
   },
   {
     "name": "陳俊諭 (X X)",
@@ -969,7 +969,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_lettlebread-1636356655@_ori-1000x1000.jpg"
+    "image_url": "images/members/陳俊諭.jpg"
   },
   {
     "name": "高予真 (Yu-Chen Kao)",
@@ -981,7 +981,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_cybeliak-1636356655@_ori.jpg"
+    "image_url": "images/members/高予真.jpg"
   },
   {
     "name": "黃邦烜 (Bang-Hsuan Huang)",
@@ -993,7 +993,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_doppjk-1636356657@_ori.jpg"
+    "image_url": "images/members/黃邦烜.jpg"
   },
   {
     "name": "張皓欽 (Hao-Chin Chang)",
@@ -1005,7 +1005,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_pizzaboy1029-1636356655@_ori.jpg"
+    "image_url": "images/members/張皓欽.jpg"
   },
   {
     "name": "陳憶文 (Yi-Wen Chen)",
@@ -1017,7 +1017,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_sharre-1636356657@_ori.jpg"
+    "image_url": "images/members/陳憶文.jpg"
   },
   {
     "name": "朱紋儀 (Wen-Yi Chu)",
@@ -1029,7 +1029,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Kristy11-1636356656@_ori.jpg"
+    "image_url": "images/members/朱紋儀.jpg"
   },
   {
     "name": "陳珮寧 (Pei-Ning Chen)",
@@ -1041,7 +1041,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_ning-1636356657@_ori-1000x1000.jpg"
+    "image_url": "images/members/陳珮寧.jpg"
   },
   {
     "name": "賴敏軒 (Min-Hsuan Lai)",
@@ -1053,7 +1053,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_tonylai-1636356657@_ori-768x1000.jpg"
+    "image_url": "images/members/賴敏軒.jpg"
   },
   {
     "name": "張鈺玫 (Yu-Mei Chang)",
@@ -1065,7 +1065,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_cheese-1636356657@_ori.jpg"
+    "image_url": "images/members/張鈺玫.jpg"
   },
   {
     "name": "劉家妏 (Chia-Wen Liu)",
@@ -1077,7 +1077,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_mkacat103-1636356656@_ori.jpg"
+    "image_url": "images/members/劉家妏.jpg"
   },
   {
     "name": "陳韋豪 (Wen-Hau Chen)",
@@ -1089,7 +1089,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Howard-1636356656@_ori.jpg"
+    "image_url": "images/members/陳韋豪.jpg"
   },
   {
     "name": "陳冠宇 (Kuan-Yu Chen)",
@@ -1101,7 +1101,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Menphis-1636356655@_ori.jpg"
+    "image_url": "images/members/陳冠宇.jpg"
   },
   {
     "name": "劉鳳萍 (X X)",
@@ -1113,7 +1113,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_patty-1636356656@_ori.jpg"
+    "image_url": "images/members/劉鳳萍.jpg"
   },
   {
     "name": "羅永典 (Yueng-Tien Lo)",
@@ -1125,7 +1125,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_ytlo-1636356656@_ori.jpg"
+    "image_url": "images/members/羅永典.jpg"
   },
   {
     "name": "游斯涵 (Suhan Yu)",
@@ -1137,7 +1137,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Silvia-1636356657@_ori.jpg"
+    "image_url": "images/members/游斯涵.jpg"
   },
   {
     "name": "李鴻欣 (Hung-Shin Lee)",
@@ -1149,7 +1149,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Winston-1636356656@_ori.jpg"
+    "image_url": "images/members/李鴻欣.jpg"
   },
   {
     "name": "朱芳輝 (Fang-Hui Chu)",
@@ -1161,7 +1161,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Ryanchu-1636356657@_ori.jpg"
+    "image_url": "images/members/朱芳輝.jpg"
   },
   {
     "name": "許庭瑋 (Ting-Wei Hsu)",
@@ -1173,7 +1173,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_bettyting-1636356656@_ori.jpg"
+    "image_url": "images/members/許庭瑋.jpg"
   },
   {
     "name": "陳鴻彬 (Hung-Bin Chen)",
@@ -1185,7 +1185,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_jojo-1636356657@_ori.jpg"
+    "image_url": "images/members/陳鴻彬.jpg"
   },
   {
     "name": "林士翔 (Shih-Hsiang Lin)",
@@ -1197,7 +1197,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://secure.gravatar.com/avatar/46d5c422acbb91af4c9a7aa8138b3853c15cb246ccac7bcfdabb66dc617b2f9d?s=1000&d=retro&r=g"
+    "image_url": "images/members/林士翔.jpg"
   },
   {
     "name": "陳怡婷 (Yi-Ting Chen)",
@@ -1209,7 +1209,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Felina-1636356655@_ori-1000x1000.jpg"
+    "image_url": "images/members/陳怡婷.jpg"
   },
   {
     "name": "劉士弘 (Shih-Hung Liu)",
@@ -1221,7 +1221,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_bob-1636356655@_ori.jpg"
+    "image_url": "images/members/劉士弘.jpg"
   },
   {
     "name": "邱炫盛 (Hsuan-Sheng Chiu)",
@@ -1233,7 +1233,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_mistq-1636356656@_ori.jpg"
+    "image_url": "images/members/邱炫盛.jpg"
   },
   {
     "name": "陳燦輝 (Tzan-Hwei Chen)",
@@ -1245,7 +1245,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_pili-1636356656@_ori.jpg"
+    "image_url": "images/members/陳燦輝.jpg"
   },
   {
     "name": "朱惠銘 (Huei-Ming Chu)",
@@ -1257,7 +1257,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_evan-1636356655@_ori.jpg"
+    "image_url": "images/members/朱惠銘.jpg"
   },
   {
     "name": "劉成韋 (Cheng-Wei Liu)",
@@ -1269,7 +1269,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_orange-1636356656@_ori.jpg"
+    "image_url": "images/members/劉成韋.jpg"
   },
   {
     "name": "張志豪 (Chih-Hao Chang)",
@@ -1281,7 +1281,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_topddb-1636356657@_ori.jpg"
+    "image_url": "images/members/張志豪.jpg"
   },
   {
     "name": "蔡文鴻 (Wen-Hung Tsai)",
@@ -1293,7 +1293,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Louis-1636356656@_ori.jpg"
+    "image_url": "images/members/蔡文鴻.jpg"
   },
   {
     "name": "郭人瑋 (Jen-Wei Kuo)",
@@ -1305,7 +1305,7 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_Roger-1636356657@_ori.jpg"
+    "image_url": "images/members/郭人瑋.jpg"
   },
   {
     "name": "黃耀民 (Yao-Min Huang)",
@@ -1317,6 +1317,6 @@ export const memberJson = [
     "email_url": "",
     "git_url": "",
     "google_scholar_url": "",
-    "image_url": "https://smil.csie.ntnu.edu.tw/wp-content/uploads/members/A01_@ntnusmil_angus-1636356656@_ori.jpg"
-  },
+    "image_url": "images/members/黃耀民.jpg"
+  }
 ]

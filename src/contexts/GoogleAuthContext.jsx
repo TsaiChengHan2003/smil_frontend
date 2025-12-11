@@ -7,7 +7,7 @@ const GoogleAuthContext = createContext(null);
 export function GoogleAuthProvider({ children }) {
   const [user, setUser] = useState(null);
   // 先設為 true，之後再改回 false
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
   
   useEffect(() => {
@@ -129,6 +129,7 @@ export function GoogleAuthProvider({ children }) {
   const value = {
     user,
     isLoggedIn,
+    setIsLoggedIn,
     handleGoogleResponse,
     handlePasskeyResponse,
     handleLogout,

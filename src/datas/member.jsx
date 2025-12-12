@@ -28,7 +28,7 @@ export const memberJson = [
     "content": "",
     "tags": "",
     "create_time": "",
-    "type": 1,
+    "type": 2,
     "phone": "",
     "email_url": "jethrowang0531@gmail.com",
     "git_url": "",

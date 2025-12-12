@@ -15,10 +15,7 @@ export default function Research() {
   // 預設全部展開 (true)，如果希望預設全部收合，這裡可以設為 {}
   const [expandedSections, setExpandedSections] = useState(() => {
     if (!categories) return {};
-    const initialState = {};
-    categories.forEach((_, index) => {
-      initialState[index] = true;
-    });
+    const initialState = {0: true};
     return initialState;
   });
 

@@ -49,11 +49,11 @@ export default function ResearchDetail() {
         <div className={styles.container}>
           <Link to="/research" className={styles.backLink}>
             <ArrowLeft size={20} />
-            <span>返回研究列表</span>
+            <span>{t("researchDetail.return_research_list")}</span>
           </Link>
           <div className={styles.errorMessage}>
-            <h2>找不到該研究項目</h2>
-            <p>請檢查網址是否正確</p>
+            <h2>{t("researchDetail.no_research_found")}</h2>
+            <p>{t("researchDetail.check")}</p>
           </div>
         </div>
       </Fragment>
@@ -67,7 +67,7 @@ export default function ResearchDetail() {
         
         <Link to="/research" className={styles.backLink}>
           <ArrowLeft size={20} />
-          <span>返回研究列表</span>
+          <span>{t("researchDetail.return_research_list")}</span>
         </Link>
         
         <article className={styles.detailArticle}>
@@ -100,13 +100,13 @@ export default function ResearchDetail() {
           <div className={styles.detailContent}>
             <section className={styles.detailSection}>
               {/* 這個標題底線會自動變色 */}
-              <h3 className={styles.sectionTitle}>研究內容</h3>
+              <h3 className={styles.sectionTitle}>{t("researchDetail.content")}</h3>
               <p className={styles.sectionContent}>{researchItem.content}</p>
             </section>
             
             {researchItem.application && (
               <section className={styles.detailSection}>
-                <h3 className={styles.sectionTitle}>應用領域</h3>
+                <h3 className={styles.sectionTitle}>{t("researchDetail.application")}</h3>
                 <p className={styles.sectionContent}>{researchItem.application}</p>
               </section>
             )}

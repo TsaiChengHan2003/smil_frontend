@@ -266,6 +266,13 @@
       }
     ]
   },
+  "researchDetail": {
+    "return_research_list": "Return Research List",
+    "no_research_found": "No Research Found",
+    "check": "Please check the URL",
+    "content": "Research Content",
+    "application": "Application Domain"
+  },
   "life": {
     "title": "Lab Life",
     "description": "Memories beyond research, including conferences, parties, and celebrations."

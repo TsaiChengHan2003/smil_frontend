@@ -238,6 +238,13 @@
       }
     ]
   },
+  "researchDetail": {
+    "return_research_list": "返回研究列表",
+    "no_research_found": "找不到該研究項目",
+    "check": "請檢查網址是否正確",
+    "content": "研究內容",
+    "application": "應用領域"
+  },
   "members": {
     "title": "實驗室成員",
     "professor": "教授",
